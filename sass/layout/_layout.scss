@@ -158,7 +158,7 @@ main {
   }
 }
 /* WIE page ================================ */
-/* history page ======================= */
+/* history ======================= */
 .history{
   @include span (12 of 12);
   .left-content{
@@ -174,7 +174,7 @@ main {
     }
   }
 }
-/* vision and mission page ======================= */
+/* vision and mission ======================= */
 .vision-mission{
   @include span(12 of 12);
   .vision{
@@ -205,6 +205,22 @@ main {
       @include breakpoint($bp-tablet){
         @include span (6 of 12 last);
       }
+    }
+  }
+}
+/* establish-mail ======================= */
+.establish-mail{
+  @include span(12 of 12);
+  .left-content{
+    @include span (12 of 12);
+    @include breakpoint($bp-tablet){
+      @include span (6 of 12);
+    }
+  }
+  .right-content{
+    @include span (12 of 12);
+    @include breakpoint($bp-tablet){
+      @include span (6 of 12 last);
     }
   }
 }
