@@ -1,32 +1,45 @@
 .hero-image {
     height: 100vh;
-    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+
     .overlay {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
     .hero-image-content {
         position: relative;
         z-index: 3;
         color: $white;
         top: 30%;
+
         h1 {
             font-size: 100px;
             font-weight: 900;
             height: 145px;
         }
-        p{
-            @include breakpoint($bp-desktop){
+
+        p {
+            @include breakpoint($bp-desktop) {
                 font-size: 1.2rem;
             }
+
             font-size: 1rem;
         }
-        
+
     }
+
     // @include breakpoint($bp-desktop){
     //     &:after{
     //         content: " ";
@@ -43,18 +56,22 @@
     //     }
     // }
 }
-.history{
+
+.history {
     padding: 50px 0;
     color: $wie_color;
-    .left-content{
-        
-        h2{
+
+    .left-content {
+
+        h2 {
             font-size: 2.5rem;
             line-height: 1.2;
-            @include breakpoint($bp-desktop){
+
+            @include breakpoint($bp-desktop) {
                 position: relative;
                 text-align: center;
-                &::before{
+
+                &::before {
                     content: '';
                     position: absolute;
                     top: 0;
@@ -65,21 +82,25 @@
                 }
             }
         }
-        p{
+
+        p {
             margin-top: 20px;
             font-size: 1rem;
         }
     }
-    .right-content{
+
+    .right-content {
         position: relative;
-        img{
+
+        img {
             border-radius: 50%;
             border: 5px solid $wie_color;
             margin: auto;
             width: 300px;
-            
+
         }
-        h3{
+
+        h3 {
             font-family: forte;
             text-decoration: underline;
             font-style: italic;
@@ -100,5 +121,62 @@
             /* Internet Explorer */
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
         }
+    }
+}
+
+.vision-mission {
+    background-image: url('../../images/wie/section-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    color: $white;
+
+    .vision {
+        padding: 50px 0;
+        position: relative;
+
+        .left-content {
+
+        }
+
+        .right-content {
+            text-align: center;
+            p{
+                font-size: 3rem;
+                line-height: 1
+            }
+        }
+        @include breakpoint($bp-desktop){
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: $white;
+                margin-top: 50px;
+                -webkit-transform: rotate(2deg);
+                -moz-transform: rotate(2deg);
+                -o-transform: rotate(2deg);
+                -ms-transform: rotate(2deg);
+                transform: rotate(2deg);
+            }
+        }
+    }
+
+    .mission {
+        padding: 50px 0;
+
+        .left-content {
+            text-align: center;
+            p{
+                font-size: 3rem;
+                line-height: 1
+            }
+        }
+
+        .right-content {}
     }
 }
