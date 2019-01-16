@@ -157,3 +157,19 @@ main {
     }
   }
 }
+/* WIE page ================================ */
+.history{
+  @include span (12 of 12);
+  .left-content{
+    @include span (12 of 12);
+    @include breakpoint($bp-tablet) {
+      @include span (6 of 12);
+    }
+  }
+  .right-content{
+    @include span (12 of 12);
+    @include breakpoint($bp-tablet) {
+      @include span (6 of 12 last);
+    }
+  }
+}

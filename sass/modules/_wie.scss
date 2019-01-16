@@ -1,0 +1,104 @@
+.hero-image {
+    height: 100vh;
+    background-position: center center;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .hero-image-content {
+        position: relative;
+        z-index: 3;
+        color: $white;
+        top: 30%;
+        h1 {
+            font-size: 100px;
+            font-weight: 900;
+            height: 145px;
+        }
+        p{
+            @include breakpoint($bp-desktop){
+                font-size: 1.2rem;
+            }
+            font-size: 1rem;
+        }
+        
+    }
+    // @include breakpoint($bp-desktop){
+    //     &:after{
+    //         content: " ";
+    //         position: absolute;
+    //         display: block;
+    //         width: 50%;
+    //         height: 50%;
+    //         top: 100%;
+    //         left: 0;
+    //         z-index: 3;
+    //         background: red;
+    //         transform-origin: top right;
+    //         transform: skew(-30deg, 0deg);
+    //     }
+    // }
+}
+.history{
+    padding: 50px 0;
+    color: $wie_color;
+    .left-content{
+        
+        h2{
+            font-size: 2.5rem;
+            line-height: 1.2;
+            @include breakpoint($bp-desktop){
+                position: relative;
+                text-align: center;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 30%;
+                    width: 3px;
+                    height: 90px;
+                    background-color: $wie_color;
+                }
+            }
+        }
+        p{
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+    }
+    .right-content{
+        position: relative;
+        img{
+            border-radius: 50%;
+            border: 5px solid $wie_color;
+            margin: auto;
+            width: 300px;
+            
+        }
+        h3{
+            font-family: forte;
+            text-decoration: underline;
+            font-style: italic;
+            position: absolute;
+            top: 85%;
+            left: 40%;
+            line-height: 1;
+            font-size: 2rem;
+            /** Rotate the text **/
+            /* Safari */
+            -webkit-transform: rotate(-10deg);
+            /* Firefox */
+            -moz-transform: rotate(-10deg);
+            /* IE */
+            -ms-transform: rotate(-10deg);
+            /* Opera */
+            -o-transform: rotate(-10deg);
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+        }
+    }
+}
