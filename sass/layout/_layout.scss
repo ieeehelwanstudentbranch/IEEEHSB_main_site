@@ -224,3 +224,44 @@ main {
     }
   }
 }
+/* wie-events ======================= */
+.wie-events{
+  @include span (12 of 12);
+  .events-content{
+    @include span (12 of 12);
+    .events{
+      @include span(12 of 12);
+      .event:not(:first-child){
+        @include span (6 of 12)
+      }
+      .event:nth-child(3){
+        @include span (6 of 12 last)
+      }
+      .event:last-child{
+        @include span (6 of 12 last)
+      }
+    }
+    .workshops-container{
+      @include span(12 of 12);
+      .workshops{
+        @include span (5 of 12);
+      }
+      .make{
+        @include span (5 of 12 last);
+        p{
+          @include span (6 of 12);
+          &:last-of-type{
+            @include span (6 of 12 last);
+          }
+        }
+        img{
+          @include span (6 of 12);
+          &:first-of-type{
+            @include span (6 of 12 last);
+          }
+        }
+      }
+    }
+  }
+  
+}
