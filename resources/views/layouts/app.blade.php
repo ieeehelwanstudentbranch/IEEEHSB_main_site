@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard | IEEE Helwan Student Chapter</title>
+    <title>Dashboard | IEEE Helwan Student Branch</title>
     <meta name="author" content="Mohamed Emad">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -71,12 +71,21 @@
 
 
 </main>
-
-<div class="copy">
+<div class="clear-fix"></div>
+<!-- start Footer -->
+<footer>
     <div class="content-wrap">
-        <p>&copy; IEEE-HELWAN STUDENT BRANCH - All Copy Right Reseved</p>
+        <p class="copy-right">&copy; IEEE-HELWAN STUDENT BRANCH - All Copy Right Reseved</p>
+        <!-- Social Media Links -->
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/ieeehsb/" alt="Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/helwansb" alt="twitter account"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/ieee_hsb/" alt="Instgram account"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+        <!-- end Social Media Links -->
     </div>
-</div>
+</footer>
+<!-- End Footer -->
 
 <!-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 <script>
