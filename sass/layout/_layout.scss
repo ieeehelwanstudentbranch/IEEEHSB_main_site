@@ -342,3 +342,21 @@ main {
     }
   }
 }
+
+
+
+/* footer ======================= */
+footer{
+  .copy-right{
+    @include span(12 of 12);
+    @include breakpoint($bp-tablet){
+      @include span(6 of 12);
+    }
+  }
+  .social-media{
+    @include span(12 of 12);
+    @include breakpoint($bp-tablet){
+      @include span(6 of 12 last);
+    }
+  }
+}

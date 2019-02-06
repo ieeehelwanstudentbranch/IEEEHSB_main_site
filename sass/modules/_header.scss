@@ -1,26 +1,23 @@
+// start nav
 header {
-    background-color: $white;
-    border-bottom: solid 1px #000;
+    background-color: $main_color;
     z-index: 999;
     position: fixed;
     height: auto;
-    @include breakpoint($bp-desktop){
-        background-color: transparent;
-    }
-
+    // start branding
     .site-branding {
         img {
-            height: 60px;
+            height: 40px;
+            margin-top: 10px;
         }
     }
-
+    // start navigation
     .site-navigation {
         ul {
             display: none;
-
             li {
                 display: block;
-
+                border-bottom: 1px solid $white;
                 a {
                     display: block;
                     text-align: left;
@@ -28,26 +25,23 @@ header {
                     text-decoration: none;
                     font-size: 17px;
                     @include transition-time(0.5s, ease-in-out);
-                    &:hover,
-                    &:focus {
-                        color: #fff
-                    }
+                    color: #fff
                 }
             }
 
             .menu-item-has-children {
                 ul {
                     display: none;
+                    width: 100%;
                     li {
                         padding-left: 20px;
-                        border-left: solid 1px $main_color;
-                        border-bottom: solid 1px $main_color;
-                        &:first-child {
-                            border-top: solid 1px $main_color;
+                        border: none !important;
+                        background-color: $main_color;
+                        a{
+                            border-top:1px solid $white;
                         }
                     }
                 }
-
                 &:active,
                 &:focus,
                 &:hover {
@@ -60,55 +54,46 @@ header {
             @include breakpoint($bp-desktop) {
                 display: block;
                 float: right;
-
                 li {
                     display: inline-block;
-
+                    border-bottom: none;
                     &:not(:last-child) {
-                        border-right: 1px solid $main_color;
+                        border-right: 1px solid $white;
                     }
-
                     @include transition-time(0.5s, ease-in-out);
-
                     &:hover,
                     &:focus {
                         background-color: $main_color;
                         border-color: $white;
-
                         a {
                             color: $white;
                         }
-
                     }
                 }
 
                 .menu-item-has-children {
                     position: relative;
-
                     ul {
                         position: absolute;
                         top: 100%;
                         left: 0;
                         display: none;
-
                         li {
                             display: block;
-                            border: solid 1px $main_color;
-
+                            border: 1px solid $white;
+                            width: 100%;
                             a {
                                 padding: 5px 40px;
-                                color: $main_color;
+                                color: $white;
                             }
 
                         }
                     }
-
                     &:hover,
                     &:focus,
                     &:active {
                         ul {
                             display: block;
-
                             li {
                                 a {
                                     color: #fff
@@ -117,7 +102,6 @@ header {
                         }
                     }
                 }
-
             }
         }
     }
@@ -127,9 +111,8 @@ header {
         height: 40px;
         background: transparent;
         padding-top: 5px;
-        border: 1px solid $main_color;
-        color: $main_color;
-
+        border: 1px solid $white;
+        color: $white;
         @include breakpoint($bp-desktop) {
             display: none;
         }
@@ -139,18 +122,15 @@ header {
 
 
 header.sticky {
-    background: $white;
-    color: $main_color;
-
     .site-navigation {
         ul {
-
             .menu-item-has-children {
                 ul {
                     li {
-                        background: $white;
+                        background: $main_color;
+                        text-align: left;
                         a {
-                            color: $main_color;
+                            color: $white;
                         }
                         &:hover,
                         &:focus {
