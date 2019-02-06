@@ -103,20 +103,24 @@ main {
   }
 }
 
-.confereces{
-  .content-row{
+.confereces {
+  .content-row {
     @include span (12 of 12);
-    .left-content{
+
+    .left-content {
       @include span (12 of 12);
     }
-    .right-content{
+
+    .right-content {
       @include span (12 of 12);
     }
-    @include breakpoint($bp-tablet){
-      .left-content{
+
+    @include breakpoint($bp-tablet) {
+      .left-content {
         @include span (6 of 12);
       }
-      .right-content{
+
+      .right-content {
         @include span (6 of 12 last);
       }
     }
@@ -128,32 +132,213 @@ main {
 .faqs {
   .faq {
     @include span (12 of 12);
+
     @include breakpoint($bp-tablet) {
       @include gallery (4 of 12);
     }
   }
 }
+
 /* about page ================================ */
-.page-content{
-  .entry-section{
+.page-content {
+  .entry-section {
     @include span (12 of 12);
-    .about{
+
+    .about {
       @include breakpoint($bp-desktop) {
         @include span (6 of 12);
       }
     }
-    img{
+
+    img {
       @include breakpoint($bp-desktop) {
         @include span (6 of 12 last);
       }
     }
   }
-  .ieee-hsb{
-    img{
+
+  .ieee-hsb {
+    img {
       @include span (6 of 12);
     }
-    .details{
+
+    .details {
       @include span (6 of 12 last)
+    }
+  }
+}
+
+/* WIE page ================================ */
+/* history ======================= */
+.history {
+  @include span (12 of 12);
+
+  .left-content {
+    @include span (12 of 12);
+
+    @include breakpoint($bp-tablet) {
+      @include span (6 of 12);
+    }
+  }
+
+  .right-content {
+    @include span (12 of 12);
+
+    @include breakpoint($bp-tablet) {
+      @include span (6 of 12 last);
+    }
+  }
+}
+
+/* vision and mission ======================= */
+.vision-mission {
+  @include span(12 of 12);
+
+  .vision {
+    @include span(12 of 12);
+
+    .left-content {
+      @include span (12 of 12);
+
+      @include breakpoint($bp-tablet) {
+        @include span (6 of 12);
+      }
+    }
+
+    .right-content {
+      @include span (12 of 12);
+
+      @include breakpoint($bp-tablet) {
+        @include span (6 of 12 last);
+      }
+    }
+  }
+
+  .mission {
+    @include span(12 of 12);
+
+    .left-content {
+      @include span (12 of 12);
+
+      @include breakpoint($bp-tablet) {
+        @include span (6 of 12);
+      }
+    }
+
+    .right-content {
+      @include span (12 of 12);
+
+      @include breakpoint($bp-tablet) {
+        @include span (6 of 12 last);
+      }
+    }
+  }
+}
+
+/* establish-mail ======================= */
+.establish-mail {
+  @include span(12 of 12);
+
+  .left-content {
+    @include span (12 of 12);
+
+    @include breakpoint($bp-tablet) {
+      @include span (6 of 12);
+    }
+  }
+
+  .right-content {
+    @include span (12 of 12);
+
+    @include breakpoint($bp-tablet) {
+      @include span (6 of 12 last);
+    }
+  }
+}
+
+/* wie-events ======================= */
+.wie-events {
+  @include span (12 of 12);
+
+  .events-content {
+    @include span (12 of 12);
+
+    .events {
+      @include span(12 of 12);
+
+      .event {
+        @include span(12 of 12);
+
+        @include breakpoint($bp-tablet) {
+          &:not(:first-child) {
+            @include span (6 of 12)
+          }
+
+          &:nth-child(3) {
+            @include span (6 of 12 last)
+          }
+
+          &:last-child {
+            @include span (6 of 12 last)
+          }
+        }
+      }
+
+    }
+
+    .workshops-container {
+      @include span(12 of 12);
+
+      @include breakpoint($bp-tablet) {
+        .workshops {
+          @include span (6 of 12);
+        }
+
+        .make {
+          @include span (6 of 12 last);
+
+          p {
+            @include span (6 of 12);
+
+            &:last-of-type {
+              @include span (6 of 12 last);
+            }
+          }
+
+          img {
+            @include span (6 of 12);
+
+            &:first-of-type {
+              @include span (6 of 12 last);
+            }
+          }
+        }
+      }
+      @include breakpoint($bp-desktop) {
+        .workshops {
+          @include span (5 of 12);
+        }
+
+        .make {
+          @include span (5 of 12 last);
+
+          p {
+            @include span (6 of 12);
+
+            &:last-of-type {
+              @include span (6 of 12 last);
+            }
+          }
+
+          img {
+            @include span (6 of 12);
+
+            &:first-of-type {
+              @include span (6 of 12 last);
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -28,8 +28,6 @@ header {
                     text-decoration: none;
                     font-size: 17px;
                     @include transition-time(0.5s, ease-in-out);
-
-
                     &:hover,
                     &:focus {
                         color: #fff
@@ -40,12 +38,10 @@ header {
             .menu-item-has-children {
                 ul {
                     display: none;
-
                     li {
                         padding-left: 20px;
                         border-left: solid 1px $main_color;
                         border-bottom: solid 1px $main_color;
-
                         &:first-child {
                             border-top: solid 1px $main_color;
                         }
@@ -153,26 +149,20 @@ header.sticky {
                 ul {
                     li {
                         background: $white;
-
                         a {
                             color: $main_color;
                         }
-
                         &:hover,
                         &:focus {
                             li {
                                 background: $main_color !important;
-
                                 a {
                                     color: #fff;
                                 }
                             }
-
                         }
                     }
-
                 }
-
             }
         }
     }
