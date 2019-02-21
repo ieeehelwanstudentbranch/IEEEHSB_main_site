@@ -147,4 +147,5 @@
         </div>
     </div>
 </div>
+<div class="clear-fix"></div>
 @endsection
