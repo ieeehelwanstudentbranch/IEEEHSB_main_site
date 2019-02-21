@@ -46,16 +46,16 @@
                             the 2nd IEEE section outside
                             the US. IEEE Egypt Section consists of 3 main entities:
                         </li>
-                            <ul>
-                                <li>Student Activities: 30+ affiliated IEEE student branches in different Egyptian
-                                    universities.</li>
-                                <li>Affinity Groups:</li>
-                                    <ul>
-                                        <li>IEEE Young Professionals (YP) Egypt </li>
-                                        <li>IEEE Women in Engineering (WIE) Egypt </li>
-                                    </ul>
-                                <li>Technical Activities: concentrated in the so-called Society Chapters </li>
-                            </ul>
+                        <ul>
+                            <li>Student Activities: 30+ affiliated IEEE student branches in different Egyptian
+                                universities.</li>
+                            <li>Affinity Groups:</li>
+                                <ul>
+                                    <li>IEEE Young Professionals (YP) Egypt </li>
+                                    <li>IEEE Women in Engineering (WIE) Egypt </li>
+                                </ul>
+                            <li>Technical Activities: concentrated in the so-called Society Chapters </li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -68,14 +68,14 @@
                     <h3>IEEE Helwan Student Branch,</h3>
                     <p>the 3rd created branch in Egypt, was the very first student organization found in Helwan University in 2001.</p>
                     <p>IEEE HSB was awarded many worldwide competitions;
-                            it has two chapters called <b>RAS</b> & <b>PES</b>, and one affinity
-                            group known as <b>WIE</b>. <b>IEEE HSB</b> has made a strong
-                            platform through its Facebook page, and its annually
-                            magazine that has been created since 2017.
-                            The magazine is called <b>Eye-eee</b> and was sold through
-                            their booth in maker-fair 17’ event in Cairo;
-                            the magazines are also available online on their
-                            Facebook page.</p>
+                        it has two chapters called <b>RAS</b> & <b>PES</b>, and one affinity
+                        group known as <b>WIE</b>. <b>IEEE HSB</b> has made a strong
+                        platform through its Facebook page, and its annually
+                        magazine that has been created since 2017.
+                        The magazine is called <b>Eye-eee</b> and was sold through
+                        their booth in maker-fair 17’ event in Cairo;
+                        the magazines are also available online on their
+                        Facebook page.</p>
                 </div>
             </div>
         </div>

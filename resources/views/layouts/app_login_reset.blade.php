@@ -54,12 +54,7 @@
     </div>
 </footer>
 <!-- End Footer -->
-<!-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'article-ckeditor' );
-</script> -->
-<!-- Scripts -->
-<!-- <script src="{{ asset('js/app.js') }}"></script> -->
+
 <script src="{{ asset('js/published-menu.min.js') }}"></script>
 <script src="{{ asset('js/sticky-menu.min.js') }}"></script>
 <script src="{{ asset('js/login-form.min.js') }}"></script>

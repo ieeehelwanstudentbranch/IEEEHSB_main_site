@@ -57,7 +57,7 @@
 
 
 
-
+<div class="clear-fix"></div>
 <!-- start Footer -->
 <footer>
     <div class="content-wrap">
@@ -73,17 +73,9 @@
 </footer>
 <!-- End Footer -->
 
-<!-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'article-ckeditor' );
-</script> -->
-<!-- Scripts -->
-<!-- <script src="{{ asset('js/app.js') }}"></script> -->
 <script src="{{ asset('js/published-menu.min.js') }}"></script>
 <script src="{{ asset('js/sticky-menu.min.js') }}"></script>
 <script src="{{ asset('js/slider-settings.min.js') }}"></script>
-<script src="{{ asset('js/map.min.js') }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH1AK01Pq4TE5uoNk2fz4WTNxe3PxayOM&callback=map"></script>
 <script src="{{ asset('js/carousel.min.js') }}"></script>
 </body>
 
