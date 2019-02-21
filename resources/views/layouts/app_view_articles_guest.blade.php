@@ -72,8 +72,6 @@
 <!-- Scripts -->
 <script src="{{ asset('js/published-menu.min.js') }}"></script>
 <script src="{{ asset('js/sticky-menu.min.js') }}"></script>
-<script src="{{ asset('js/map.min.js') }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH1AK01Pq4TE5uoNk2fz4WTNxe3PxayOM&callback=map"></script>
 
 </body>
 
