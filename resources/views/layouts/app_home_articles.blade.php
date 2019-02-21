@@ -29,7 +29,12 @@
                 <li class="active"><a href="/" title="Home">Home</a></li>
                 <li><a href="/about" title="about">About</a></li>
                 <li><a href="/misc" title="Misc">Misc</a></li>
-                <li><a href="/wie">Women In Engineering</a></li>
+                <li class="menu-item-has-children">
+                    <a href="#" title="Chapters">Chapters</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/wie">Women In Engineering</a></li>
+                    </ul>
+                </li>
                 <li class="menu-item-has-children">
                     <a href="#" title="EYE-EEE Magazine">EYE-EEE Magazine</a>
                     <ul class="dropdown-menu" role="menu">
