@@ -1,4 +1,5 @@
 const gulp = require("gulp"),
+    sourcemaps = require('gulp-sourcemaps'),
     // files collector
     concat = require('gulp-concat'),
     // sass to css compiler
@@ -42,8 +43,27 @@ gulp.task("styles", function () {
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest('./build/css'))
+    // return gulp.src("./sass/styles.scss")
+    // .pipe(sourcemaps.init({loadMaps: true}))
+    // .pipe(sass({
+    //     outputStyle: 'expanded'
+    // }).on('error', sass.logError))
+    // .pipe(autoprefixer('last 5 versions'))
+    // .pipe(sourcemaps.write())
+    // // .pipe(lineec())
+    // .pipe(gulp.dest('build/css'));
 });
 
+
+// gulp.task('concatCSS', ()=>{
+//     return gulp.src('build/css/*.css')
+//     .pipe(sourcemaps.init({loadMaps: true, largeFile: true}))
+//     .pipe(concat('css/styles.min.css'))
+//     .pipe(cleanCSS())
+//     .pipe(sourcemaps.write('./maps/'))
+//     // .pipe(lineec())
+//     .pipe(gulp.dest('./build/'));
+// })
 // libraries style
 gulp.task('libraries_CSS', () => {
     gulp.src([
@@ -105,4 +125,4 @@ gulp.task('watch', () => {
 
 
 
-gulp.task('default', ['moveindex', 'styles', 'scripts', 'libraries_CSS',  'libraries_scripts', 'image', 'fontawesome_Fonts', 'articles', 'watch']);
+gulp.task('default', ['moveindex', 'styles','scripts', 'libraries_CSS',  'libraries_scripts', 'image', 'fontawesome_Fonts', 'articles', 'watch']);

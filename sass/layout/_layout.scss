@@ -1,14 +1,17 @@
 //susy configurations
 $susy: ( // set number of columns
-columns: 12,
-// set gutters between columns
-gutters: 0.5,
-//gutter-position: inside,
-global-box-sizing: border-box,
-//output: isolate
-flow: susy-get(flow));
-$siminars: (columns: 12,
-gutters: 5);
+  columns: 12,
+  // set gutters between columns
+  gutters: 0.5,
+  //gutter-position: inside,
+  global-box-sizing: border-box,
+  //output: isolate
+  flow: susy-get(flow)
+);
+$siminars: (
+  columns: 12,
+  gutters: 5
+);
 /*break points*/
 $bp-mobile: 320px;
 $bp-tablet: 768px;
@@ -357,6 +360,54 @@ footer{
     @include span(12 of 12);
     @include breakpoint($bp-tablet){
       @include span(6 of 12 last);
+    }
+  }
+}
+
+
+.ras-highboard{
+  .board-member{
+    @include span(6);
+    &:last-child{
+      @include span(6 last)
+    }
+  }
+}
+
+.competitions{
+  .competition{
+    @include span(12 of 12);
+    &:last-child{
+      .competition-description{
+        @include span(8 of 12)
+      }
+      .competition-images{
+        @include span(4 of 12 last)
+      }
+    }
+  }
+}
+
+
+.projects{
+  .project{
+    @include span (12);
+    .project-data{
+      @include span (8)
+    }
+    .project-image{
+      @include span (4 last)
+    }
+  }
+}
+.ras-events{
+  .event{
+    @include span (12);
+    .event-data{
+      @include span (8)
+    }
+    .event-images{
+      @include span (4 last)
     }
   }
 }
