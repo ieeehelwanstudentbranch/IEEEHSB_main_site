@@ -7,7 +7,9 @@ header {
     // start branding
     .site-branding {
         img {
-            height: 40px;
+            height: auto;
+        }
+        @include breakpoint($bp-desktop){
             margin-top: 10px;
         }
     }
@@ -78,6 +80,7 @@ header {
                         top: 100%;
                         left: 0;
                         display: none;
+                        width: max-content;
                         li {
                             display: block;
                             border: 1px solid $white;
