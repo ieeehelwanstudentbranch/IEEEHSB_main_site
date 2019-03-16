@@ -28,6 +28,7 @@ Route::get('/home', 'ArticleGuestController@index');
 Route::get('/about', 'ArticleGuestController@about');
 Route::get('/misc', 'ArticleGuestController@misc');
 Route::get('/wie', 'ArticleGuestController@wie');
+Route::get('/ras', 'ArticleGuestController@ras');
 
 Route::get('/articles', 'PostsController@index');
 Route::get('/', 'ArticleGuestController@index');

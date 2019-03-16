@@ -32,6 +32,8 @@
                 <li class="menu-item-has-children">
                     <a href="#" title="Chapters">Chapters</a>
                     <ul class="dropdown-menu" role="menu">
+                        <li><a href="/ras">RAS</a></li>
+                        <li><a href="https://peshsc.com">Power Engineering Society</a></li>
                         <li><a href="/wie">Women In Engineering</a></li>
                     </ul>
                 </li>

@@ -15,3 +15,5 @@ yarn-error.log
 .gitattributes
 .env
 .env.example
+/build
+/bower_components
