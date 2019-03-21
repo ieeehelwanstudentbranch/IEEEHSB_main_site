@@ -14,22 +14,18 @@ class PostCollection extends Resource
      */
     public function toArray($request)
     {
-            return [
-                'title' => $this->title,
-                'body' => $this->body,
-                'post_image' => $this->post_image,
-                'post_video' => $this->post_video,
-                'post_file' => $this->post_file,
-                'created_at' => $this->created_at,
-                'post_owner' => $this->post_owner,
-                'href'       =>[
-                    'review'    => route('posts.show' , $this->id),
-//                    'delete'    => route('posts.destroy' , $this->id .'/destroy')
-                ]
-
-
-
-            ];
-
+        return [
+            'title' => $this->title,
+            'body' => $this->body,
+            'hero_image' => $this->hero_image,
+            'custom_file' => $this->custom_file,
+            "user_id" => $this->user->id,
+            'created_at' => $this->created_at,
+            // 'post_owner' => $this->post_owner,
+            'href'       =>[
+                'review'    => route('posts.show' , $this->id),
+                // 'delete'    => route('posts.destroy' , $this->id .'/destroy')
+            ]
+        ];
     }
 }

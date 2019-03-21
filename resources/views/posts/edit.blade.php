@@ -40,39 +40,39 @@
 
             <div class="field-wrap">
                 <label>Image</label>
-                <input type="file" name="post_image" value="{{$post->post_image}}">
+                <input type="file" name="hero_image" value="{{$post->hero_image}}">
             </div>
 
-            <div class="field-wrap">
+            <!-- <div class="field-wrap">
                 <label>Video</label>
                 <input type="file" name="post_video" value="{{$post->post_video}}">
-            </div>
+            </div> -->
 
             <div class="field-wrap">
                 <label>File</label>
-                <input type="file" name="post_file" value="{{$post->post_file}}">
+                <input type="file" name="custom_file" value="{{$post->custom_file}}">
             </div>
             <!-- login button -->
             <input type="submit" class="button" value="Update">
         </form>
         <div class="">
-            @if($post->post_image)
+            @if($post->hero_image)
                     <h3>Image</h3>
-                    <img src="{{ URL::to('/') }}/uploaded/images/{{$post->post_image}}" class="img-thumbnail " alt="{{$post->post_image}}" style="width:50%;height:50%" >
+                    <img src="{{ URL::to('/') }}/uploaded/images/{{$post->hero_image}}" class="img-thumbnail" alt="{{$post->hero_image}}" width="50%" height="50%" >
             @endif
 
-            @if($post->post_video)
+            <!-- @if($post->post_video)
                     <h3>Video</h3>
                 <video width="320" height="240" controls>
                     <source src="{{ URL::to('/') }}/uploaded/videos/{{$post->post_video}}" type="video/mp4">
                     <source src="{{ URL::to('/') }}/uploaded/videos/{{$post->post_video}}" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
-            @endif
+            @endif -->
 
-            @if($post->post_file)
+            @if($post->custom_file)
                 <h3>File</h3>
-                <a href="{{ URL::to('/') }}/uploaded/files/{{$post->post_file}}">{{$post->post_file}}</a>
+                <a href="{{ URL::to('/') }}/uploaded/files/{{$post->custom_file}}">{{$post->custom_file}}</a>
             @endif
 
         </div>

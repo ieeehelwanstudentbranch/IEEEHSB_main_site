@@ -20,7 +20,7 @@ class PostsController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(5);
-//        return PostCollection::collection($posts);
+        // return PostCollection::collection($posts);
         if (auth()->user()) {
             return view('/posts.index', compact('posts'));
         } else {
@@ -37,7 +37,7 @@ class PostsController extends Controller
     public function create()
     {
         return view('posts.create');
-//        return redirect('posts/create');
+        // return redirect('posts/create');
     }
 
     /**
@@ -56,48 +56,38 @@ class PostsController extends Controller
             //
             $this->validate($request, [
                 'title' => 'required',
-                'post_image' => 'image|nullable|max:10000000 | mimes:jpg,png,jpeg,svg',
-                'post_video' => 'nullable | max:10000000 |mimes:mp4,3pg,flv,mkv,weba',
-                'post_file' => 'nullable|max:10000000 | mimes:pdf,txt,docx,doc,pptx,ppt,xls ',
+                'hero_image' => 'image|nullable|max:10000000 | mimes:jpg,png,jpeg,svg',
+                'custom_file' => 'nullable|max:10000000 | mimes:pdf,txt,docx,doc,pptx,ppt,xls ',
             ]);
 
-//upload image
-            if ($request->hasFile('post_image')) {
-
-//            foreach ($request->post_image as $post_image) {
-
-                $filenameWithExtention = $request->file('post_image')->getClientOriginalName();
+            // upload image
+            if ($request->hasFile('hero_image')) {
+                // foreach ($request->hero_image as $hero_image) {
+                $filenameWithExtention = $request->file('hero_image')->getClientOriginalName();
                 $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
-                $extension = $request->file('post_image')->getClientOriginalExtension();
+                $extension = $request->file('hero_image')->getClientOriginalExtension();
                 $fileNameStoreImage = $fileName . '_' . time() . '.' . $extension;
-
-                $path = $request->file('post_image')->move(base_path() . '/public/uploaded/images/', $fileNameStoreImage);
-
+                $path = $request->file('hero_image')->move(base_path() . '/public/uploaded/images/', $fileNameStoreImage);
             }
 
-//        upload video
+            /***********  upload video*/
+            // if ($request->hasFile('post_video')) {
+            //     $filenameWithExtention = $request->file('post_video')->getClientOriginalName();
+            //     $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
+            //     $extension = $request->file('post_video')->getClientOriginalExtension();
+            //     $fileNameStoreVideo = $fileName . '_' . time() . '.' . $extension;
+            //     $path = $request->file('post_video')->move(base_path() . '/public/uploaded/videos/', $fileNameStoreVideo);
+            // }
 
-            if ($request->hasFile('post_video')) {
+            // upload file
+            if ($request->hasFile('custom_file')) {
 
-                $filenameWithExtention = $request->file('post_video')->getClientOriginalName();
+                $filenameWithExtention = $request->file('custom_file')->getClientOriginalName();
                 $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
-                $extension = $request->file('post_video')->getClientOriginalExtension();
-                $fileNameStoreVideo = $fileName . '_' . time() . '.' . $extension;
-
-                $path = $request->file('post_video')->move(base_path() . '/public/uploaded/videos/', $fileNameStoreVideo);
-
-            }
-
-            //        upload file
-
-            if ($request->hasFile('post_file')) {
-
-                $filenameWithExtention = $request->file('post_file')->getClientOriginalName();
-                $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
-                $extension = $request->file('post_file')->getClientOriginalExtension();
+                $extension = $request->file('custom_file')->getClientOriginalExtension();
                 $fileNameStoreFile = $fileName . '_' . time() . '.' . $extension;
 
-                $path = $request->file('post_file')->move(base_path() . '/public/uploaded/files/', $fileNameStoreFile);
+                $path = $request->file('custom_file')->move(base_path() . '/public/uploaded/files/', $fileNameStoreFile);
 
             }
 
@@ -105,10 +95,10 @@ class PostsController extends Controller
             $post->title = $request->input('title');
             $post->body = $request->input('body');
             $post->user_id = auth()->user()->id;
-            $post->post_owner = auth()->user()->name;
-            $post->post_image = $fileNameStoreImage;
-            $post->post_video = $fileNameStoreVideo;
-            $post->post_file = $fileNameStoreFile;
+            // $post->post_owner = auth()->user()->name;
+            $post->hero_image = $fileNameStoreImage;
+            // $post->post_video = $fileNameStoreVideo;
+            $post->custom_file = $fileNameStoreFile;
             $post->save();
 
             // return redirect('api/posts')->with('success', 'Done successfully');
@@ -159,57 +149,55 @@ class PostsController extends Controller
             // $fileNameStoreVideo =null;
             // $fileNameStoreFile = null;
 
-            $fileNameStoreImage = $post->post_image;
-            $fileNameStoreVideo = $post->post_video;
-            $fileNameStoreFile = $post->post_file;
+            $fileNameStoreImage = $post->hero_image;
+            // $fileNameStoreVideo = $post->post_video;
+            $fileNameStoreFile = $post->custom_file;
 
             $this->validate($request, [
                 'title' => 'required',
-                'post_image' => 'image|nullable|max:10000000 | mimes:jpg,png,jpeg,svg',
-                'post_video' => 'nullable | max:10000000 |mimes:mp4,3pg,flv,mkv,weba',
-                'post_file' => 'nullable|max:10000000 | mimes:pdf,txt,docx,doc,pptx,ppt,xls ',
+                'hero_image' => 'image|nullable|max:10000000 | mimes:jpg,png,jpeg,svg',
+                // 'post_video' => 'nullable | max:10000000 |mimes:mp4,3pg,flv,mkv,weba',
+                'custom_file' => 'nullable|max:10000000 | mimes:pdf,txt,docx,doc,pptx,ppt,xls ',
             ]);
 
             //upload image
-            if ($request->hasFile('post_image')) {
+            if ($request->hasFile('hero_image')) {
 
-                $filenameWithExtention = $request->file('post_image')->getClientOriginalName();
+                $filenameWithExtention = $request->file('hero_image')->getClientOriginalName();
                 $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
-                $extension = $request->file('post_image')->getClientOriginalExtension();
+                $extension = $request->file('hero_image')->getClientOriginalExtension();
                 $fileNameStoreImage = $fileName . '_' . time() . '.' . $extension;
 
-                $path = $request->file('post_image')->move(base_path() . '/public/uploaded/images/', $fileNameStoreImage);
+                $path = $request->file('hero_image')->move(base_path() . '/public/uploaded/images/', $fileNameStoreImage);
 
                 // $fileNameStoreVideo = null;
                 // $fileNameStoreFile = null;
 
             }
 
-            // upload video
+            /************** upload video */
+            // if ($request->hasFile('post_video')) {
 
-            if ($request->hasFile('post_video')) {
+            //     $filenameWithExtention = $request->file('post_video')->getClientOriginalName();
+            //     $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
+            //     $extension = $request->file('post_video')->getClientOriginalExtension();
+            //     $fileNameStoreVideo = $fileName . '_' . time() . '.' . $extension;
 
-                $filenameWithExtention = $request->file('post_video')->getClientOriginalName();
+            //     $path = $request->file('post_video')->move(base_path() . '/public/uploaded/videos/', $fileNameStoreVideo);
+
+            //     // $fileNameStoreImage = null;
+            //     // $fileNameStoreFile = null;
+            // }
+
+            /***************** upload file */
+            if ($request->hasFile('custom_file')) {
+
+                $filenameWithExtention = $request->file('custom_file')->getClientOriginalName();
                 $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
-                $extension = $request->file('post_video')->getClientOriginalExtension();
-                $fileNameStoreVideo = $fileName . '_' . time() . '.' . $extension;
-
-                $path = $request->file('post_video')->move(base_path() . '/public/uploaded/videos/', $fileNameStoreVideo);
-
-                // $fileNameStoreImage = null;
-                // $fileNameStoreFile = null;
-            }
-
-            // upload file
-
-            if ($request->hasFile('post_file')) {
-
-                $filenameWithExtention = $request->file('post_file')->getClientOriginalName();
-                $fileName = pathinfo($filenameWithExtention, PATHINFO_FILENAME);
-                $extension = $request->file('post_file')->getClientOriginalExtension();
+                $extension = $request->file('custom_file')->getClientOriginalExtension();
                 $fileNameStoreFile = $fileName . '_' . time() . '.' . $extension;
 
-                $path = $request->file('post_file')->move(base_path() . '/public/uploaded/files/', $fileNameStoreFile);
+                $path = $request->file('custom_file')->move(base_path() . '/public/uploaded/files/', $fileNameStoreFile);
 
                 // $fileNameStoreVideo = null;
                 // $fileNameStoreImage = null;
@@ -218,9 +206,9 @@ class PostsController extends Controller
             // $post =   Post::findOrFail($id);
             $post->title = $request->input('title');
             $post->body = $request->input('body');
-            $post->post_image = $fileNameStoreImage;
-            $post->post_video = $fileNameStoreVideo;
-            $post->post_file = $fileNameStoreFile;
+            $post->hero_image = $fileNameStoreImage;
+            // $post->post_video = $fileNameStoreVideo;
+            $post->custom_file = $fileNameStoreFile;
             $post->update();
 
             // return redirect('/api/posts')->with('success', 'Done successfully');
@@ -242,27 +230,24 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
         if ((auth()->user()->id == $post->user_id) || auth()->user()->type == 'admin') {
 
-            if ($post->post_image) {
-                Storage::delete('/public/uploaded/images/' . $post->post_image);
-
+            if ($post->hero_image) {
+                Storage::delete('/public/uploaded/images/' . $post->hero_image);
             }
-            if ($post->post_video) {
-                Storage::delete('/public/uploaded/videos/' . $post->post_video);
-
-            }
-            if ($post->post_file) {
-                Storage::delete('/public/uploaded/files/' . $post->post_file);
+            // if ($post->post_video) {
+            //     Storage::delete('/public/uploaded/videos/' . $post->post_video);
+            // }
+            if ($post->custom_file) {
+                Storage::delete('/public/uploaded/files/' . $post->custom_file);
 
             }
 
             $post->delete();
-//            return redirect('api/posts')->with('success', 'Done successfully');
-            //            return redirect('/posts')->with('success', 'Done successfully');
+            // return redirect('api/posts')->with('success', 'Done successfully');
+            // return redirect('/posts')->with('success', 'Done successfully');
             return redirect('/articles-dashboard')->with('success', 'Done successfully');
         } else {
-//           return redirect('api/posts')->with('error','Unauthorized');
+            // return redirect('api/posts')->with('error','Unauthorized');
             return redirect('/articles-dashboard')->with('error', 'Unauthorized');
-
         }
 
     }
@@ -270,13 +255,12 @@ class PostsController extends Controller
     public function viewPost($id)
     {
         $post = Post::findOrFail($id);
-//     return view('posts/viewPost' , compact('post'));
-        //     if((auth()->user()) ||$this->middleware('auth') ) {
+        // return view('posts/viewPost' , compact('post'));
+        // if((auth()->user()) ||$this->middleware('auth') ) {
         if (!auth()->guest()) {
             return view('posts/viewPost', compact('post'));
         } else {
             return view('/viewPostGuest', compact('post'));
         }
     }
-
 }
