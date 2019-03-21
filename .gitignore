@@ -6,3 +6,6 @@ build/
 ./vendor
 .env
 .env.example
+bootstrap/
+vendor/
+storage/
