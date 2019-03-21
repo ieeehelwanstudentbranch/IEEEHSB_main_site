@@ -29,7 +29,7 @@ previous.addEventListener('click', function(){
 // auto click function
 function autoclick() {
     next.click();
-    setTimeout('autoclick()', 2000);
+    setTimeout('autoclick()', 5000);
 }
 
-setTimeout("autoclick()", 2000);
+setTimeout("autoclick()", 5000);

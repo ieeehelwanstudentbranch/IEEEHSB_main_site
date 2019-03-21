@@ -4,11 +4,18 @@ footer {
     .copy-right{
         line-height: 300%;
         color: #fff;
+        text-align: center;
+        @include breakpoint($bp-desktop){
+            text-align: left;
+        }
     }
     .social-media {
-        text-align: right;
         font-size: 25px;
         color: #646464;
+        text-align: center;
+        @include breakpoint($bp-desktop){
+            text-align: right;
+        }
         li{
             text-align: center;
             display: inline-block;
