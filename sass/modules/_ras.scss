@@ -3,17 +3,22 @@
 
     .hero-image-content {
         position: relative;
-
         &::after {
             position: absolute;
             content: 'RAS';
-            font-size: 30rem;
+            font-size: 9rem;
             line-height: 1;
             width: 100%;
             height: 100%;
             font-weight: bold;
             color: $white;
             text-align: center;
+            @include breakpoint($bp-tablet){
+                font-size: 20rem;
+            }
+            @include breakpoint($bp-desktop){
+                font-size: 30rem;
+            }
         }
     }
 
@@ -31,9 +36,15 @@
 
 .ras-history {
     color: $ras_color !important;
-    font-size: 4rem;
+    font-size: 1.5rem;
     line-height: 1;
     text-align: center;
+    @include breakpoint($bp-tablet){
+        font-size: 2.5rem;
+    }
+    @include breakpoint($bp-desktop){
+        font-size: 4rem;
+    }
 }
 
 .ras-mission {
@@ -47,7 +58,10 @@
     }
 
     p {
-        font-size: 2rem
+        font-size: 1.5rem;
+        @include breakpoint($bp-desktop){
+            font-size: 2rem;
+        }
     }
 }
 
@@ -58,7 +72,11 @@
 
     .content-wrap {
         >h3 {
-            font-size: 3rem;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            @include breakpoint($bp-desktop){
+                font-size: 3rem;
+            }
         }
 
         .board-member {
@@ -71,11 +89,11 @@
             }
             .member-data{
                 margin-top: 20px;
+                font-size: 1.5rem;
                 h3{
-                    font-size: 2rem;
                     font-weight: bold;
                 }
-                .position{
+                @include breakpoint($bp-desktop){
                     font-size: 2rem;
                 }
             }
@@ -87,29 +105,47 @@
     color: $ras_color;
     h3{
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
+        @include breakpoint($bp-desktop){
+            font-size: 3rem;
+        }
+        
     }
     .competition{
         .competition-name{
-            font-size: 3rem;
+            font-size: 2rem;
             line-height: 1;
+            @include breakpoint($bp-desktop){
+                font-size: 3rem;
+            }
+            margin: 40px 0;
         }
         .competition-gallery{
             img{
-                @include gallery(4 of 12);
-                margin-top: 30px;
+                margin-top: 20px;
+                @include breakpoint($bp-tablet){
+                    @include gallery(6 of 12);
+                }
+                @include breakpoint($bp-desktop){
+                    @include gallery(4 of 12);
+                    margin-top: 30px;
+                }
             }
         }
         .competition-description{
             margin-top: 40px;
         }
-
         .competition-winner{
             font-weight: bold;
         }
-        &:last-child{
+        &:last-of-type{
+            font-size: 1rem;
             .competition-description{
-                font-size: 2rem;
+                font-size: 1rem;
+                @include breakpoint($bp-desktop){
+                    font-size: 2rem;
+                }
+                
                 ol{
                     list-style-type: decimal;
                     li{
@@ -137,10 +173,16 @@
     .project{
         .project-name{
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 1.5rem;
+            @include breakpoint ($bp-desktop){
+                font-size: 3rem;
+            }
         }
         p{
-            font-size: 2rem;
+            font-size: 1rem;
+            @include breakpoint ($bp-desktop){
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -151,13 +193,19 @@
     h3{
         font-weight: bold;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
+        @include breakpoint($bp-desktop){
+            font-size: 3rem;
+        }
     }
     .event{
         .event-data{
             h4{
                 font-weight: bold;
-                font-size: 3rem;
+                font-size: 2rem;
+                @include breakpoint($bp-desktop){
+                    font-size: 3rem;
+                }
             }
             .event-description{
                 font-size: 1.5rem;  

@@ -355,15 +355,16 @@ main {
 
 /* footer ======================= */
 footer{
+  @include span(12 of 12);
   .copy-right{
     @include span(12 of 12);
-    @include breakpoint($bp-tablet){
+    @include breakpoint($bp-desktop){
       @include span(6 of 12);
     }
   }
   .social-media{
     @include span(12 of 12);
-    @include breakpoint($bp-tablet){
+    @include breakpoint($bp-desktop){
       @include span(6 of 12 last);
     }
   }
@@ -372,22 +373,37 @@ footer{
 
 .ras-highboard{
   .board-member{
-    @include span(6);
-    &:last-child{
-      @include span(6 last)
+    @include breakpoint($bp-tablet){
+      @include span(6);
+      &:last-child{
+        @include span(6 last)
+      }
     }
   }
 }
 
 .competitions{
   .competition{
-    @include span(12 of 12);
-    &:last-child{
-      .competition-description{
-        @include span(8 of 12)
+    @include breakpoint($bp-desktop){
+      &:last-of-type{
+        @include span (12);
+        .competition-description{
+          @include span(8)
+        }
+        .competition-images{
+          @include span(4 last)
+        }
       }
-      .competition-images{
-        @include span(4 of 12 last)
+    }
+    @include breakpoint($bp-tablet){
+      &:last-of-type{
+        @include span (12);
+        .competition-images{
+          @include span(12);
+          img{
+            @include gallery(6)
+          }
+        }
       }
     }
   }
@@ -395,24 +411,35 @@ footer{
 
 
 .projects{
+  @include span (12);
   .project{
     @include span (12);
     .project-data{
-      @include span (8)
+      @include span (12);
+      @include breakpoint($bp-desktop){
+        @include span (8);
+      }
     }
     .project-image{
-      @include span (4 last)
+      @include span (12);
+      @include breakpoint($bp-desktop){
+        @include span (4 last);
+      }
     }
   }
 }
 .ras-events{
+  @include span (12);
   .event{
     @include span (12);
-    .event-data{
-      @include span (8)
+    @include breakpoint ($bp-desktop){
+      .event-data{
+        @include span (8)
+      }
+      .event-images{
+        @include span (4 last)
+      }
     }
-    .event-images{
-      @include span (4 last)
-    }
+    
   }
 }
