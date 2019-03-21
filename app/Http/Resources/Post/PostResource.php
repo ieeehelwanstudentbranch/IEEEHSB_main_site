@@ -17,20 +17,15 @@ class PostResource extends JsonResource
         return [
             'title' => $this->title,
             'body' => $this->body,
-            'post_image' => $this->post_image,
-            'post_video' => $this->post_video,
-            'post_file' => $this->post_file,
+            'hero_image' => $this->hero_image,
+            'custom_file' => $this->custom_file,
+            "user_id" => $this->user->id,
             'created_at' => $this->created_at,
-            'post_owner' => $this->post_owner,
+            // 'post_owner' => $this->post_owner,
             'href'       =>[
                 'edit'    => route('posts.edit' , $this->id ),
-
-                 'delete'    => route('posts.destroy' , $this->id .'/destroy')
-
-                ]
-
-
-
+                'delete'    => route('posts.destroy' , $this->id .'/destroy')
+            ]
         ];
     }
 }

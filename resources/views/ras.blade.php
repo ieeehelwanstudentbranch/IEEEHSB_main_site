@@ -52,6 +52,7 @@
 </section>
 <!-- end highboard -->
 <!-- start competetions -->
+<div class="clear-fix"></div>
 <section class="competitions">
     <div class="content-wrap">
         <h3>IEEE HSB RAS Competitions</h3>

@@ -38,15 +38,15 @@
             {{--</div>--}}
             <label>Choose image</label>
             <div class="field-wrap">
-                <input type="file" name="post_image" accept="jpg,png,jpeg,svg">
+                <input type="file" name="hero_image" accept="jpg,png,jpeg,svg">
             </div>
-            <label>Choose Video</label>
+            <!-- <label>Choose Video</label>
             <div class="field-wrap">
                 <input type="file" name="post_video" accept="mp4,3pg,flv,mkv,weba">
-            </div>
+            </div> -->
             <label>Choose file</label>
             <div class="field-wrap">
-                <input type="file" name="post_file"  accept="pdf,txt,docx,doc,pptx,ppt,xls">
+                <input type="file" name="custom_file"  accept="pdf,txt,docx,doc,pptx,ppt,xls">
             </div>
             <!-- login button -->
             <input type="submit" class="button"  value="Add Article">

@@ -10,8 +10,8 @@
             <article class="post">
                 <div class="thumb">
                     <a href="articles/{{$post->id}}/view" title="{{$post->title}}">
-                        @if($post->post_image)
-                            <img src="{{ URL::to('/') }}/uploaded/images/{{$post->post_image}}" alt="{{$post->title}}">
+                        @if($post->hero_image)
+                            <img src="{{ URL::to('/') }}/uploaded/images/{{$post->hero_image}}" alt="{{$post->title}}">
                         @else
                             <img src="{{asset('images/ieee-post-default.png')}}" alt="{{$post->title}}">
                         @endif
@@ -32,9 +32,6 @@
                 <p>there is no posts to view</p>
             </div>
         @endif
-        
     </div>
-    
 </div>
-
 @endsection

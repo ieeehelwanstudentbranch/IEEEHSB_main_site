@@ -9,10 +9,10 @@
                 <article class="post">
                     <div class="thumb">
                         <a href="articles-dashboard/{{$post->id}}/view">
-                            @if($post->post_image)
-                                <img src="{{ URL::to('/') }}/uploaded/images/{{$post->post_image}}" alt="{{$post->post_image}}">
+                            @if($post->hero_image)
+                                <img src="{{ URL::to('/') }}/uploaded/images/{{$post->hero_image}}" alt="{{$post->hero_image}}">
                             @else
-                                <img src="{{asset('images/ieee-post-default.png')}}" alt="{{$post->post_image}}">
+                                <img src="{{asset('images/ieee-post-default.png')}}" alt="IEEE logo as a default hero image">
                             @endif
                         </a>
                     </div>
@@ -23,7 +23,7 @@
                     </div>
                     
                     <div class="actions">
-                        <p><i class="fa fa-user" aria-hidden="true"></i> {{$post->post_owner}}</p>
+                        <p><i class="fa fa-user" aria-hidden="true"></i> {{$post->user->name}}</p>
                         @if (!\auth::guest())
                             @if((auth()->user()->id == $post->user_id) || (auth()->user()->type == 'admin') )
                                 <a href="articles-dashboard/{{$post->id}}/edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
