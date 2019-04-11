@@ -16,7 +16,6 @@
         "jquery": "^3.4",
         "laravel-mix": "^4.0.15",
         "lodash": "^4.17.11",
-        "popper.js": "^1.15",
-        "vue": "^2.6.10"
+        "popper.js": "^1.15"
     }
 }
