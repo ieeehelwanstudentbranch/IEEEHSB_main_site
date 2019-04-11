@@ -1,0 +1,39 @@
+aside {
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    border-right: 1px solid $main_color;
+    background-color: $gray;
+    z-index: 2;
+    min-height: 900px;
+    @include transition-time(0.5s, ease-in-out);
+    @include breakpoint($bp_desktop) {
+        position: fixed;
+        top: 60px;
+        left: 0
+    }
+
+    ul {
+        display: block;
+        li {
+            display: block;
+            list-style: none;
+            a {
+                display: block;
+                text-align: left;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                @include transition-time(0.5s, ease-in-out);
+                @include link-style($white, $white);
+                border-bottom: 1px solid $main_color;
+            }
+        }
+    }
+}
+
+main{
+    position: relative;
+    top: 60px;
+    margin: 50px auto 100px;
+}

@@ -98,14 +98,13 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-// require('./bootstrap');
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/styles.scss":
+/*!************************************!*\
+  !*** ./resources/sass/styles.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -114,14 +113,14 @@
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!****************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/styles.scss ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\moham\Desktop\updating-website\ieeehsb-19-ws\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\moham\Desktop\updating-website\ieeehsb-19-ws\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\moham\Desktop\updating-website\ieeehsb-19-ws\resources\sass\styles.scss */"./resources/sass/styles.scss");
 
 
 /***/ })

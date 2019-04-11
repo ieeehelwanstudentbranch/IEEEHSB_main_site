@@ -11,8 +11,6 @@
     <meta name="description" content="Was created in 2001 .. and it was the 3rd branch to be created in Egypt. Then it was re-activated again in October 2010 by Dr.omar hanfy and Mr. ahmed kamal. IEEE Helwan was the first student organization to be founded in Helwan university.">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/styles.min.css')}}">
-    <link rel="stylesheet" href="{{asset('js/detectmobilebrowser.js')}}">
-    
 </head>
 
 <body>

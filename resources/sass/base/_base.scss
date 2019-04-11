@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main_font-family;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+// set links styles
+a {
+    display: block;
+    color: $main_color;
+    font-family: $main_font-family;
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+// set body style
+body {
+    background: $white;
+    font-family: $main_font-family;
+}
+
+// all images default style
+img {
+    width: 100%;
+    display: block;
+}
+
+// contnet wrapper 
+.content-wrap {
+    padding: 0 10px;
+
+    @include breakpoint($bp-desktop) {
+        @include container($main-width);
+    }
+}
+
+// content wrapper with no padding in mobile view
+.content-wrap__no-padding {
+    @include breakpoint($bp-tablet) {
+        padding: 0 10px;
+    }
+
+    @include breakpoint($bp-desktop) {
+        @include container($main-width);
+    }
+}
+
+// super text style
+sup {
+    font-size: small !important;
+    vertical-align: super !important;
+}
+
+// buttons style
+.button {
+    @include breakpoint($bp-mobile) {
+        padding: 8px 10px;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        margin: 20px 0;
+    }
+
+    @include breakpoint($bp-tablet) {
+        padding: 8px 18px;
+
+    }
+
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    background-color: #000;
+    color: $white;
+    border: 1px solid #000;
+    font-family: $main_font-family;
+    border-radius: 4px;
+    text-transform: $main_text-transform;
+    @include transition-time(0.2s, ease-in-out);
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #000;
+        color: $white;
+    }
+
+    cursor: pointer;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+// entry header style
+.entry-header {
+    text-align: center;
+    color: $main_color;
+    font-weight: 400;
+    font-family: $main_font-family;
+    text-transform: $main_text-transform;
+}
+
+// image-wrapper
+.image-wrapper {
+    position: relative;
+
+    // frame style
+    .frame {
+        position: absolute;
+        border: 1px solid #363636;
+        h3 {
+            text-align: left;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #363636;
+            margin-left: 20px
+        }
+
+    }
+    img{
+        width: 100%;
+    }
+
+    @include breakpoint($bp-mobile) {
+        .frame {
+            width: 100vw;
+            height: 500px;
+            left: -10px;
+            top: -100px;
+        }
+    }
+
+    @include breakpoint($bp-tablet) {
+        .frame {
+            height: 400px;
+            width: 100%;
+            top: -80px;
+            left: 10px;
+        }
+    }
+    @include breakpoint($bp-desktop) {
+        .frame {
+            height: 500px;
+            width: 100%;
+            top: -80px;
+            left: 10px;
+        }
+    }
+}
