@@ -38,7 +38,7 @@
                 <li class="menu-item-has-children">
                     <a href="#" title="EYE-EEE Magazine">EYE-EEE Magazine</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" title="Magazine">Magazine</a></li>
+                        <li><a href="/magazine" title="Magazine">Magazine</a></li>
                         @if (Auth::guest())
                             <li><a href="/articles" title="articles">Articles</a></li>
                         @endif
