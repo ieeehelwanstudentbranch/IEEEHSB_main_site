@@ -46,5 +46,10 @@ class ArticleGuestController extends Controller
         return view('/ras' , compact('posts'));
     }
 
-
+    public function magazine()
+    {
+        $posts =   Post::orderBy('created_at','desc')->paginate(5);
+        // return PostCollection::collection($posts);
+        return view('/magazine' , compact('posts'));
+    }
 }

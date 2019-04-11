@@ -16,8 +16,6 @@
             @endif
         @endif
 
-        
-
         @if (!\auth::guest())
             @if((auth()->user()->id == $post->user_id) || (auth()->user()->type == 'admin') )
                 <div>

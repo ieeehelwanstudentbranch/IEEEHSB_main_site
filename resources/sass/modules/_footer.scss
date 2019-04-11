@@ -1,0 +1,38 @@
+footer {
+    background-color: #222222;
+    padding: 20px 0;
+    .copy-right{
+        line-height: 300%;
+        color: #fff;
+        text-align: center;
+        @include breakpoint($bp-desktop){
+            text-align: left;
+        }
+    }
+    .social-media {
+        font-size: 25px;
+        color: #646464;
+        text-align: center;
+        @include breakpoint($bp-desktop){
+            text-align: right;
+        }
+        li{
+            text-align: center;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            background-color: #646464;
+            margin: 0 5px;
+            a{ 
+                color: transparent;
+                display: block;
+                i {
+                    color: #363636
+                }
+            }
+            
+        }
+    }   
+}
