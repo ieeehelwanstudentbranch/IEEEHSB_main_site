@@ -157,7 +157,7 @@ main {
   }
 }
 
-/* Misc page ================================ */
+/* events page ================================ */
 
 .seminars .seminar {
   width: 100%;
@@ -217,7 +217,7 @@ main {
   }
 }
 
-/* Misc page ================================ */
+/* events page ================================ */
 
 .faqs .faq {
   width: 100%;
@@ -1684,12 +1684,12 @@ main {
   position: relative;
 }
 
-.slider-wrap #misc-slider {
+.slider-wrap #events-slider {
   width: 100%;
   height: 100vh;
 }
 
-.slider-wrap #misc-slider .slide {
+.slider-wrap #events-slider .slide {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -1699,7 +1699,7 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-.slider-wrap #misc-slider .slide .gray-scale {
+.slider-wrap #events-slider .slide .gray-scale {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -1710,7 +1710,7 @@ main {
   opacity: 0.7;
 }
 
-.slider-wrap #misc-slider .slide .overlay {
+.slider-wrap #events-slider .slide .overlay {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1721,7 +1721,7 @@ main {
   opacity: 0.7;
 }
 
-.slider-wrap #misc-slider .slide .background-text {
+.slider-wrap #events-slider .slide .background-text {
   position: absolute;
   z-index: 2;
   top: 20%;
@@ -1732,7 +1732,7 @@ main {
   text-shadow: 0px 0px #2b3896;
 }
 
-.slider-wrap #misc-slider .slide .background-text p {
+.slider-wrap #events-slider .slide .background-text p {
   color: #2a5096;
   text-align: center;
   font-weight: 900;
@@ -1740,17 +1740,17 @@ main {
 }
 
 @media (min-width: 320px) {
-  .slider-wrap #misc-slider .slide .background-text {
+  .slider-wrap #events-slider .slide .background-text {
     top: 40%;
   }
 
-  .slider-wrap #misc-slider .slide .background-text p {
+  .slider-wrap #events-slider .slide .background-text p {
     font-weight: 900;
     font-size: 4rem;
   }
 }
 
-.slider-wrap #misc-slider .slide .slide-content {
+.slider-wrap #events-slider .slide .slide-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1764,13 +1764,13 @@ main {
 }
 
 @media (min-width: 320px) {
-  .slider-wrap #misc-slider .slide .slide-content h3 {
+  .slider-wrap #events-slider .slide .slide-content h3 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
   }
 
-  .slider-wrap #misc-slider .slide .slide-content p {
+  .slider-wrap #events-slider .slide .slide-content p {
     font-size: 1rem;
     color: #ffffff;
     text-align: center;
@@ -1778,12 +1778,12 @@ main {
 }
 
 @media (min-width: 768px) {
-  .slider-wrap #misc-slider .slide .slide-content h3 {
+  .slider-wrap #events-slider .slide .slide-content h3 {
     font-size: 1.8rem;
     color: #fff;
   }
 
-  .slider-wrap #misc-slider .slide .slide-content p {
+  .slider-wrap #events-slider .slide .slide-content p {
     font-size: 1.2rem;
     color: #fff;
     width: 39%;
@@ -1914,7 +1914,7 @@ main {
 
 @media (min-width: 1024px) {
   .confereces {
-    background-image: url("/assets/images/misc/Reach-your-infinity.jpg");
+    background-image: url("/assets/images/events/Reach-your-infinity.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -1922,7 +1922,7 @@ main {
 
 @media (min-width: 1024px) {
   .faqs {
-    background-image: url("/assets/images/misc/FAQ.jpg");
+    background-image: url("/assets/images/events/FAQ.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -2692,3 +2692,5 @@ main {
   }
 }
 
+
+/*# sourceMappingURL=styles.css.map*/

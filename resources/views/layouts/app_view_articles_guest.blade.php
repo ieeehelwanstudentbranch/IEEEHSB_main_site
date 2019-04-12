@@ -26,11 +26,11 @@
             <ul id="menu">
                 <li class="active"><a href="/" title="Home">Home</a></li>
                 <li><a href="/about" title="about">About</a></li>
-                <li><a href="/misc" title="Misc">Misc</a></li>
+                <li><a href="/events" title="events">Events</a></li>
                 <li class="menu-item-has-children">
                     <a href="#" title="Chapters">Chapters</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/ras">RAS</a></li>
+                        <li><a href="/ras">Robotics and Automation society</a></li>
                         <li><a href="https://peshsc.com">Power Engineering Society</a></li>
                         <li><a href="/wie">Women In Engineering</a></li>
                     </ul>

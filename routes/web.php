@@ -26,7 +26,7 @@ Route::get('/register', function(){
 //Guest user
 Route::get('/home', 'ArticleGuestController@index');
 Route::get('/about', 'ArticleGuestController@about');
-Route::get('/misc', 'ArticleGuestController@misc');
+Route::get('/events', 'ArticleGuestController@events');
 Route::get('/wie', 'ArticleGuestController@wie');
 Route::get('/ras', 'ArticleGuestController@ras');
 Route::get('/magazine', 'ArticleGuestController@magazine');

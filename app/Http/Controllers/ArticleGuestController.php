@@ -26,11 +26,11 @@ class ArticleGuestController extends Controller
         // return PostCollection::collection($posts);
         return view('/about' , compact('posts'));
     }
-    public function misc()
+    public function events()
     {
         $posts =   Post::orderBy('created_at','desc')->paginate(5);
         // return PostCollection::collection($posts);
-        return view('/misc' , compact('posts'));
+        return view('/events' , compact('posts'));
     }
     public function wie()
     {

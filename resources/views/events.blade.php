@@ -1,8 +1,8 @@
 @extends('layouts.app_home_articles')
 @section('content')
 <div class="slider-wrap">
-        <div id="misc-slider">
-            <div class="slide" style="background-image: url('./images/misc/hero-image.jpg');">
+        <div id="events-slider">
+            <div class="slide" style="background-image: url('./images/events/hero-image.jpg');">
                 <div class="gray-scale"></div>
                 <div class="overlay"></div>
                 <div class="background-text"><p>AWARDS</p></div>
@@ -23,23 +23,23 @@
             </div>
             <div id="carousel-items">
                 <div class="carousel-item">
-                    <img src="images/misc/slider-1.jpg" alt="image title" width="390px" height="260px">
+                    <img src="images/events/slider-1.jpg" alt="image title" width="390px" height="260px">
                     <h4>TECH VENTURE WIE Affinity Group ‚17</h4>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/misc/slider-2.jpg" alt="image title" width="390px" height="260px">
+                    <img src="images/events/slider-2.jpg" alt="image title" width="390px" height="260px">
                     <h4>Maker Faire ‚17</h4>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/misc/slider-3.jpg" alt="image title" width="390px" height="260px">
+                    <img src="images/events/slider-3.jpg" alt="image title" width="390px" height="260px">
                     <h4>High Board ‚19</h4>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/misc/slider-4.jpg" alt="image title" width="390px" height="260px">
+                    <img src="images/events/slider-4.jpg" alt="image title" width="390px" height="260px">
                     <h4>IEEE HSB Crew ‚18</h4>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/misc/slider-5.jpg" alt="image title" width="390px" height="260px">
+                    <img src="images/events/slider-5.jpg" alt="image title" width="390px" height="260px">
                     <h4>Closing ‚17</h4>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                         <div class="frame">
                             <h3>Modifier</h3>
                         </div>
-                        <img src="images/misc/modifier.jpg" alt="modifier">
+                        <img src="images/events/modifier.jpg" alt="modifier">
                     </div>
                 </div>
                 <div class="right-content">
@@ -125,7 +125,7 @@
                         <div class="frame">
                             <h3>Local hack day</h3>
                         </div>
-                        <img src="images/misc/localhackday.jpg" alt="Local Hackday">
+                        <img src="images/events/localhackday.jpg" alt="Local Hackday">
                     </div>
                 </div>
                 <div class="left-content">
@@ -150,7 +150,7 @@
                         <div class="frame">
                             <h3>L'ingénieure</h3>
                         </div>
-                        <img src="images/misc/L'ingénieure.jpg" alt="L'ingénieure">
+                        <img src="images/events/L'ingénieure.jpg" alt="L'ingénieure">
                     </div>
                 </div>
                 <div class="right-content">
@@ -172,7 +172,7 @@
                         <div class="frame">
                             <h3>MEPCON</h3>
                         </div>
-                        <img src="images/misc/MEPCON.jpg" alt="MEPCON">
+                        <img src="images/events/MEPCON.jpg" alt="MEPCON">
                     </div>
                 </div>
                 <div class="left-content">
