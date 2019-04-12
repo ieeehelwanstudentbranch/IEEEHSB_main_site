@@ -28,10 +28,10 @@
             </div>
             <div class="slide" style="background-image: url({{asset('images/home/eye-eee-magazine.jpg')}}">
                 <div class="overlay">
-                    <!-- <div class="slide-content">
+                    <!-- <div class="slide-content">-->
                         <div class="content-title"></div>
                         <div class="content-description"></div>
-                    </div> -->
+                    </div> 
                 </div>
             </div>
             <div class="slide" style="background-image: url({{asset('images/home/ras.jpg')}}">
@@ -67,6 +67,28 @@
         <div id="arrow-right" class="arrow">
             <i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
         </div>
-    </div>
-
+    </div> 
+    <!-- <div data-name="Single Item" class="glider-contain slider-wrap" style="padding: 100px 0">
+        <button role="button" aria-label="Previous" class="arrow glider-prev" id="glider-prev">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+            
+        <div class="glider" id="glider-single">
+            <div><h1>1</h1></div>
+            <div><h1>2</h1></div>
+            <div><h1>3</h1></div>
+            <div><h1>4</h1></div>
+            <div><h1>5</h1></div>
+            <div><h1>6</h1></div>
+            <div><h1>7</h1></div>
+            <div><h1>8</h1></div>
+            <div><h1>9</h1></div>
+            <div><h1>10</h1></div>
+        </div>
+        
+        <button role="button" aria-label="Next" class="arrow glider-next" id="glider-next">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+        <div id="dots" class="glider-dots"></div>
+    </div> -->
 @endsection

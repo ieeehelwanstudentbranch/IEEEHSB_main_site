@@ -138,7 +138,7 @@ __webpack_require__(/*! ./published-menu */ "./resources/js/published-menu.js");
 
 __webpack_require__(/*! ./slider-settings */ "./resources/js/slider-settings.js");
 
-__webpack_require__(/*! ./sticky-menu */ "./resources/js/sticky-menu.js");
+__webpack_require__(/*! ./sticky-menu */ "./resources/js/sticky-menu.js"); // require('./glider-settings')
 
 /***/ }),
 
