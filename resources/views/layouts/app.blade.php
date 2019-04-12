@@ -8,7 +8,7 @@
     <title>Dashboard | IEEE Helwan Student Branch</title>
     <meta name="author" content="Mohamed Emad">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> -->
     <link rel="stylesheet" href="{{asset('css/styles.min.css')}}">
 </head>
 <body>
@@ -73,11 +73,11 @@
 <div class="clear-fix"></div>
 
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/jquery.min.js') }}"></script>
+<!-- <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/add-post.min.js') }}"></script>
 <script src="{{ asset('js/dashboard-menu.min.js') }}"></script>
 <script src="{{ asset('js/sticky-menu.min.js') }}"></script>
-<script src="{{ asset('js/del.js') }}"></script>
+<script src="{{ asset('js/del.js') }}"></script> -->
 
 </body>
 

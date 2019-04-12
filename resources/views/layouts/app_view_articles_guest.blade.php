@@ -82,8 +82,9 @@
     CKEDITOR.replace( 'article-ckeditor' );
 </script> -->
 <!-- Scripts -->
-<script src="{{ asset('js/published-menu.min.js') }}"></script>
-<script src="{{ asset('js/sticky-menu.min.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<!-- <script src="{{ asset('js/published-menu.min.js') }}"></script>
+<script src="{{ asset('js/sticky-menu.min.js') }}"></script> -->
 
 </body>
 

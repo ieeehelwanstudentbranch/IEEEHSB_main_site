@@ -74,10 +74,10 @@
     </div>
 </footer>
 <!-- End Footer -->
-
-<script src="{{ asset('js/published-menu.min.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<!-- <script src="{{ asset('js/published-menu.min.js') }}"></script>
 <script src="{{ asset('js/sticky-menu.min.js') }}"></script>
-<script src="{{ asset('js/login-form.min.js') }}"></script>
+<script src="{{ asset('js/login-form.min.js') }}"></script> -->
 </body>
 </html>
 
