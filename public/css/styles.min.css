@@ -129,14 +129,14 @@ header {
 /* Dashboard Layout ================================ */
 
 aside {
-  width: 74.2857142857%;
+  width: 78.5714285714%;
   float: left;
   margin-right: 2.8571428571%;
 }
 
 @media (min-width: 1024px) {
   aside {
-    width: 22.8571428571%;
+    width: 18.5714285714%;
     float: left;
     margin-right: 2.8571428571%;
   }
@@ -1601,7 +1601,6 @@ aside {
   border-right: 1px solid #016699;
   background-color: #707070;
   z-index: 2;
-  min-height: 900px;
   /* Safari and Chrome */
   /* Firefox */
   /* IE 9 */
@@ -1614,6 +1613,7 @@ aside {
     position: fixed;
     top: 60px;
     left: 0;
+    height: 100%;
   }
 }
 

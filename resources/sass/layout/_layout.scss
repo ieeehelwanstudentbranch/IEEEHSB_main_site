@@ -77,10 +77,10 @@ header {
 /* Dashboard Layout ================================ */
 
 aside {
-  @include span (9 of 12);
+  @include span (9.5 of 12);
 
   @include breakpoint($bp-desktop) {
-    @include span (3 of 12);
+    @include span (2.5 of 12);
   }
 }
 

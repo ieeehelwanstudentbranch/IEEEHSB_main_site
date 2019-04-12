@@ -71,20 +71,6 @@
 
 </main>
 <div class="clear-fix"></div>
-<!-- start Footer -->
-<footer>
-    <div class="content-wrap">
-        <p class="copy-right">&copy; IEEE-HELWAN STUDENT BRANCH - All Copy Right Reseved</p>
-        <!-- Social Media Links -->
-        <ul class="social-media">
-            <li><a href="https://www.facebook.com/ieeehsb/" alt="Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/helwansb" alt="twitter account"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/ieee_hsb/" alt="Instgram account"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-        <!-- end Social Media Links -->
-    </div>
-</footer>
-<!-- End Footer -->
 
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/jquery.min.js') }}"></script>
