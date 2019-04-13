@@ -138,7 +138,9 @@ __webpack_require__(/*! ./published-menu */ "./resources/js/published-menu.js");
 
 __webpack_require__(/*! ./slider-settings */ "./resources/js/slider-settings.js");
 
-__webpack_require__(/*! ./sticky-menu */ "./resources/js/sticky-menu.js"); // require('./glider-settings')
+__webpack_require__(/*! ./sticky-menu */ "./resources/js/sticky-menu.js");
+
+__webpack_require__(/*! ./glider-settings */ "./resources/js/glider-settings.js");
 
 /***/ }),
 
@@ -208,6 +210,26 @@ if (document.getElementById('menu-toggle') && document.querySelector('aside')) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/glider-settings.js":
+/*!*****************************************!*\
+  !*** ./resources/js/glider-settings.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: '#dots',
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
 
 /***/ }),
 

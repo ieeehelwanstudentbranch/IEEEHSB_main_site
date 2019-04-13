@@ -1319,29 +1319,27 @@ footer .social-media li a i {
   color: #363636;
 }
 
-.slider-wrap {
+.glider-contain {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+}
+
+.glider-contain .glider {
+  height: 100vh;
+}
+
+.glider-contain .glider .slide {
   position: relative;
-}
-
-.slider-wrap #slider {
-  width: 100%;
   height: 100vh;
 }
 
-.slider-wrap #slider .slide {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  transition: all 0.5s ease-in-out;
+@media (min-width: 320px) and (max-width: 768px) {
+  .glider-contain .glider .slide img {
+    height: 100vh;
+  }
 }
 
-.slider-wrap #slider .slide .overlay {
+.glider-contain .glider .slide .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1355,41 +1353,57 @@ footer .social-media li a i {
   text-align: left;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content h2 {
+.glider-contain .glider .slide .overlay .slide-content {
+  position: relative;
+  top: -35%;
+  -webkit-transform: translatey(50%);
+          transform: translatey(50%);
+}
+
+.glider-contain .glider .slide .overlay .slide-content h2 {
   font-size: 50px;
   color: #fff;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content .content-description {
+.glider-contain .glider .slide .overlay .slide-content .content-description {
   color: #fff;
   background-color: #016699;
   padding: 20px;
   border-radius: 20px;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content .content-description ul {
+.glider-contain .glider .slide .overlay .slide-content .content-description ul {
   margin-left: 20px;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content .content-description ul li {
+.glider-contain .glider .slide .overlay .slide-content .content-description ul li {
   list-style: circle;
 }
 
-.arrow {
-  cursor: pointer;
-  position: absolute;
+.glider-prev {
+  left: 20px;
   top: 50%;
-  margin-top: -35px;
-  color: #fff;
-  z-index: 9;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-#arrow-left {
-  left: 10px;
+.glider-next {
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-#arrow-right {
-  right: 10px;
+.glider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.glider-dots .active {
+  background-color: #016699;
 }
 
 .login-form form {

@@ -11,4 +11,4 @@ require('./login-form');
 require('./published-menu');
 require('./slider-settings');
 require('./sticky-menu');
-// require('./glider-settings')
+require('./glider-settings')
