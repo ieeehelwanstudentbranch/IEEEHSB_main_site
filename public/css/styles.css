@@ -129,14 +129,14 @@ header {
 /* Dashboard Layout ================================ */
 
 aside {
-  width: 74.2857142857%;
+  width: 78.5714285714%;
   float: left;
   margin-right: 2.8571428571%;
 }
 
 @media (min-width: 1024px) {
   aside {
-    width: 22.8571428571%;
+    width: 18.5714285714%;
     float: left;
     margin-right: 2.8571428571%;
   }
@@ -157,7 +157,7 @@ main {
   }
 }
 
-/* Misc page ================================ */
+/* events page ================================ */
 
 .seminars .seminar {
   width: 100%;
@@ -217,7 +217,7 @@ main {
   }
 }
 
-/* Misc page ================================ */
+/* events page ================================ */
 
 .faqs .faq {
   width: 100%;
@@ -1319,29 +1319,27 @@ footer .social-media li a i {
   color: #363636;
 }
 
-.slider-wrap {
+.glider-contain {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+}
+
+.glider-contain .glider {
+  height: 100vh;
+}
+
+.glider-contain .glider .slide {
   position: relative;
-}
-
-.slider-wrap #slider {
-  width: 100%;
   height: 100vh;
 }
 
-.slider-wrap #slider .slide {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  transition: all 0.5s ease-in-out;
+@media (min-width: 320px) and (max-width: 768px) {
+  .glider-contain .glider .slide img {
+    height: 100vh;
+  }
 }
 
-.slider-wrap #slider .slide .overlay {
+.glider-contain .glider .slide .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1355,41 +1353,57 @@ footer .social-media li a i {
   text-align: left;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content h2 {
+.glider-contain .glider .slide .overlay .slide-content {
+  position: relative;
+  top: -35%;
+  -webkit-transform: translatey(50%);
+          transform: translatey(50%);
+}
+
+.glider-contain .glider .slide .overlay .slide-content h2 {
   font-size: 50px;
   color: #fff;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content .content-description {
+.glider-contain .glider .slide .overlay .slide-content .content-description {
   color: #fff;
   background-color: #016699;
   padding: 20px;
   border-radius: 20px;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content .content-description ul {
+.glider-contain .glider .slide .overlay .slide-content .content-description ul {
   margin-left: 20px;
 }
 
-.slider-wrap #slider .slide .overlay .slide-content .content-description ul li {
+.glider-contain .glider .slide .overlay .slide-content .content-description ul li {
   list-style: circle;
 }
 
-.arrow {
-  cursor: pointer;
-  position: absolute;
+.glider-prev {
+  left: 20px;
   top: 50%;
-  margin-top: -35px;
-  color: #fff;
-  z-index: 9;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-#arrow-left {
-  left: 10px;
+.glider-next {
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-#arrow-right {
-  right: 10px;
+.glider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.glider-dots .active {
+  background-color: #016699;
 }
 
 .login-form form {
@@ -1601,7 +1615,6 @@ aside {
   border-right: 1px solid #016699;
   background-color: #707070;
   z-index: 2;
-  min-height: 900px;
   /* Safari and Chrome */
   /* Firefox */
   /* IE 9 */
@@ -1614,6 +1627,7 @@ aside {
     position: fixed;
     top: 60px;
     left: 0;
+    height: 100%;
   }
 }
 
@@ -1684,12 +1698,12 @@ main {
   position: relative;
 }
 
-.slider-wrap #misc-slider {
+.slider-wrap #events-slider {
   width: 100%;
   height: 100vh;
 }
 
-.slider-wrap #misc-slider .slide {
+.slider-wrap #events-slider .slide {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -1699,7 +1713,7 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-.slider-wrap #misc-slider .slide .gray-scale {
+.slider-wrap #events-slider .slide .gray-scale {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -1710,7 +1724,7 @@ main {
   opacity: 0.7;
 }
 
-.slider-wrap #misc-slider .slide .overlay {
+.slider-wrap #events-slider .slide .overlay {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1721,7 +1735,7 @@ main {
   opacity: 0.7;
 }
 
-.slider-wrap #misc-slider .slide .background-text {
+.slider-wrap #events-slider .slide .background-text {
   position: absolute;
   z-index: 2;
   top: 20%;
@@ -1732,7 +1746,7 @@ main {
   text-shadow: 0px 0px #2b3896;
 }
 
-.slider-wrap #misc-slider .slide .background-text p {
+.slider-wrap #events-slider .slide .background-text p {
   color: #2a5096;
   text-align: center;
   font-weight: 900;
@@ -1740,17 +1754,17 @@ main {
 }
 
 @media (min-width: 320px) {
-  .slider-wrap #misc-slider .slide .background-text {
+  .slider-wrap #events-slider .slide .background-text {
     top: 40%;
   }
 
-  .slider-wrap #misc-slider .slide .background-text p {
+  .slider-wrap #events-slider .slide .background-text p {
     font-weight: 900;
     font-size: 4rem;
   }
 }
 
-.slider-wrap #misc-slider .slide .slide-content {
+.slider-wrap #events-slider .slide .slide-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1764,13 +1778,13 @@ main {
 }
 
 @media (min-width: 320px) {
-  .slider-wrap #misc-slider .slide .slide-content h3 {
+  .slider-wrap #events-slider .slide .slide-content h3 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
   }
 
-  .slider-wrap #misc-slider .slide .slide-content p {
+  .slider-wrap #events-slider .slide .slide-content p {
     font-size: 1rem;
     color: #ffffff;
     text-align: center;
@@ -1778,12 +1792,12 @@ main {
 }
 
 @media (min-width: 768px) {
-  .slider-wrap #misc-slider .slide .slide-content h3 {
+  .slider-wrap #events-slider .slide .slide-content h3 {
     font-size: 1.8rem;
     color: #fff;
   }
 
-  .slider-wrap #misc-slider .slide .slide-content p {
+  .slider-wrap #events-slider .slide .slide-content p {
     font-size: 1.2rem;
     color: #fff;
     width: 39%;
@@ -1914,7 +1928,7 @@ main {
 
 @media (min-width: 1024px) {
   .confereces {
-    background-image: url("/assets/images/misc/Reach-your-infinity.jpg");
+    background-image: url("/assets/images/events/Reach-your-infinity.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -1922,7 +1936,7 @@ main {
 
 @media (min-width: 1024px) {
   .faqs {
-    background-image: url("/assets/images/misc/FAQ.jpg");
+    background-image: url("/assets/images/events/FAQ.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -2692,3 +2706,5 @@ main {
   }
 }
 
+
+/*# sourceMappingURL=styles.css.map*/

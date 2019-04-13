@@ -26,12 +26,18 @@
             <ul id="menu">
                 <li class="active"><a href="/" title="Home">Home</a></li>
                 <li><a href="/about" title="about">About</a></li>
-                <li><a href="/misc" title="Misc">Misc</a></li>
+                <li><a href="/events" title="events">Events</a></li>
                 <li class="menu-item-has-children">
                     <a href="#" title="Chapters">Chapters</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/ras">RAS</a></li>
+                        <li><a href="/ras">Robotics and Automation Society</a></li>
                         <li><a href="https://peshsc.com">Power Engineering Society</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#" title="Chapters">Affinity Groups</a>
+                    <ul class="dropdown-menu" role="menu">
                         <li><a href="/wie">Women In Engineering</a></li>
                     </ul>
                 </li>
@@ -76,8 +82,9 @@
     CKEDITOR.replace( 'article-ckeditor' );
 </script> -->
 <!-- Scripts -->
-<script src="{{ asset('js/published-menu.min.js') }}"></script>
-<script src="{{ asset('js/sticky-menu.min.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<!-- <script src="{{ asset('js/published-menu.min.js') }}"></script>
+<script src="{{ asset('js/sticky-menu.min.js') }}"></script> -->
 
 </body>
 

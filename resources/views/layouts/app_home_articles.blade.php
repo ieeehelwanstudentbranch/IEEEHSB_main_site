@@ -10,6 +10,7 @@
     <meta name="author" content="Mohamed Emad">
     <meta name="description" content="Was created in 2001 .. and it was the 3rd branch to be created in Egypt. Then it was re-activated again in October 2010 by Dr.omar hanfy and Mr. ahmed kamal. IEEE Helwan was the first student organization to be founded in Helwan university.">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/glider.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/styles.min.css')}}">
 </head>
 
@@ -26,12 +27,17 @@
             <ul id="menu">
                 <li class="active"><a href="/" title="Home">Home</a></li>
                 <li><a href="/about" title="about">About</a></li>
-                <li><a href="/misc" title="Misc">Misc</a></li>
+                <li><a href="/events" title="events">Events</a></li>
                 <li class="menu-item-has-children">
                     <a href="#" title="Chapters">Chapters</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/ras">RAS</a></li>
+                        <li><a href="/ras">Robotics and Automation Society</a></li>
                         <li><a href="https://peshsc.com">Power Engineering Society</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#" title="Chapters">Affinity Groups</a>
+                    <ul class="dropdown-menu" role="menu">
                         <li><a href="/wie">Women In Engineering</a></li>
                     </ul>
                 </li>
@@ -77,11 +83,12 @@
     </div>
 </footer>
 <!-- End Footer -->
-
-<script src="{{ asset('js/published-menu.min.js') }}"></script>
+<script src="{{ asset('js/glider.min.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<!-- <script src="{{ asset('js/published-menu.min.js') }}"></script>
 <script src="{{ asset('js/sticky-menu.min.js') }}"></script>
 <script src="{{ asset('js/slider-settings.min.js') }}"></script>
-<script src="{{ asset('js/carousel.min.js') }}"></script>
+<script src="{{ asset('js/carousel.min.js') }}"></script> -->
 </body>
 
 </html>

@@ -5,12 +5,12 @@ aside {
     border-right: 1px solid $main_color;
     background-color: $gray;
     z-index: 2;
-    min-height: 900px;
     @include transition-time(0.5s, ease-in-out);
     @include breakpoint($bp_desktop) {
         position: fixed;
         top: 60px;
-        left: 0
+        left: 0;
+        height: 100%;
     }
 
     ul {

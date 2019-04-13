@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
 
-    #misc-slider {
+    #events-slider {
         width: 100%;
         height: 100vh;
 
@@ -236,7 +236,7 @@
     }
 
     @include breakpoint($bp-desktop) {
-        background-image: url('/assets/images/misc/Reach-your-infinity.jpg');
+        background-image: url('/assets/images/events/Reach-your-infinity.jpg');
         background-position: center center;
         background-size: cover;
     }
@@ -246,7 +246,7 @@
 
 .faqs {
     @include breakpoint($bp-desktop) {
-        background-image: url('/assets/images/misc/FAQ.jpg');
+        background-image: url('/assets/images/events/FAQ.jpg');
         background-position: center center;
         background-size: cover;
     }

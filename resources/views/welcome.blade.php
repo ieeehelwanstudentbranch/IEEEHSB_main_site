@@ -1,14 +1,9 @@
 @extends('layouts.app_home_articles')
 @section('content')
-
-    <div class="slider-wrap">
-        <!-- slider left Button -->
-        <div id="arrow-left" class="arrow">
-            <i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
-        </div>
-        <!-- start slider slides -->
-        <div id="slider">
-            <div class="slide" style="background-image: url({{asset('images/home/starter.jpg')}}">
+    <div data-name="Single Item" class="glider-contain">
+        <div class="glider" id="glider-single">
+            <div class="slide">
+                <img src="{{asset('images/home/starter.jpg')}}">
                 <div class="overlay">
                     <div class="slide-content">
                         <h2>Vision</h2>
@@ -26,33 +21,39 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url({{asset('images/home/eye-eee-magazine.jpg')}}">
-                <div class="overlay">
-                    <!-- <div class="slide-content">
-                        <div class="content-title"></div>
-                        <div class="content-description"></div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="slide" style="background-image: url({{asset('images/home/ras.jpg')}}">
-                <div class="overlay">
-                    <!-- <div class="slide-content">
-                        <div class="content-title"></div>
-                        <div class="content-description"></div>
-                    </div> -->
-                </div>
 
+            <div class="slide">
+                <img src="{{asset('images/home/eye-eee-magazine.jpg')}}" />
+                <div class="overlay">
+                    <!-- <div class="slide-content">
+                        <div class="content-title"></div>
+                        <div class="content-description"></div>
+                    </div>  -->
+                </div>
             </div>
-            <div class="slide" style="background-image: url({{asset('images/home/pes.jpg')}}">
+
+            <div class="slide">
+                <img src="{{asset('images/home/ras.jpg')}}" />
                 <div class="overlay">
                     <!-- <div class="slide-content">
                         <div class="content-title"></div>
                         <div class="content-description"></div>
                     </div> -->
                 </div>
-
             </div>
-            <div class="slide" style="background-image: url({{asset('images/home/wie.jpg')}}">
+
+            <div class="slide">
+                <img src="{{asset('images/home/pes.jpg')}}" alt="">
+                <div class="overlay">
+                    <!-- <div class="slide-content">
+                        <div class="content-title"></div>
+                        <div class="content-description"></div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="{{asset('images/home/wie.jpg')}}" alt="" srcset="">
                 <div class="overlay">
                     <!-- <div class="slide-content">
                         <div class="content-title"></div>
@@ -62,11 +63,12 @@
 
             </div>
         </div>
-        <!-- End slider slides -->
-        <!-- slider right Button -->
-        <div id="arrow-right" class="arrow">
-            <i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
-        </div>
+        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <button role="button" aria-label="Next" class="glider-next" id="glider-next">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+        <div id="dots" class="glider-dots"></div>
     </div>
-
 @endsection

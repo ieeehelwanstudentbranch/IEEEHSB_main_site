@@ -20,5 +20,9 @@
         "sass": "^1.18.0",
         "sass-loader": "^7.1.0",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "@glidejs/glide": "^3.2.7",
+        "glider-js": "^1.6.5"
     }
 }
