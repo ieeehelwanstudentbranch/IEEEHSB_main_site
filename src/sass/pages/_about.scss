@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:400,500,700');
+$primary-color: #016699;
+$secondary-color: #FFFFFF;
+$font-myriad: "Myriad Pro", Myriad;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+nav ul a:hover{padding:4px;
+    background-color: #929292;
+}
+
+.about {
+    &-map {
+        background: $secondary-color;
+        color: $primary-color;
+        font-size: 175%;
+        text-align: center;
+        font-family: "Helvetica LT Std Light";
+        padding-top: 5%;
+        border: 0%;
+        margin: 0%;
+    }
+
+}
+
+.mission {
+    background: $primary-color;
+    font-family: "Futura Std Light";
+    &-p{
+        color: $secondary-color;
+        font-size: 175%;
+        text-align: justify;
+        margin: 8%;
+        padding: 5%;
+    }
+}
+.region {
+    text-align: center;
+    font-family: "Futura Std Light";
+    background: $secondary-color;
+    &-p {
+        text-align: justify;
+        color: $primary-color;
+        font-size: 175%;
+        margin: 5%;
+    }
+    &-img {
+        width: 60%;
+    }
+}
+
+.ieee-hsb {
+    text-align: center;
+    font-family: "Futura Std Light";
+    background: $primary-color;
+    &-p {
+        text-align: justify;
+        color: $secondary-color;
+        font-size: 175%;
+        margin: 5%;
+        padding-bottom: 5%;;
+    }
+    &-img {
+        width: 75%;
+    }
+}
+
+.officers {
+    text-align: center;
+    background: $secondary-color;
+    &-h1 {
+        color: $primary-color;
+        font-family: "Helvetica LT Std";
+        font-size: 600%;
+        font-weight: lighter;
+        font-style: normal;
+    }
+    &-img {
+        border-radius: 50%;
+        height: 70%;
+        width: 60%;
+    }
+    &-role {
+        font-family: "Futura Std";
+        color: #01528F;
+        font-size: 250%;
+    }
+    &-name {
+        font-family: "Futura Std";
+        color: #231F20;
+        font-size: 200%;
+    }
+}
+
+.highboard {
+    text-align: center;
+    background-color: $primary-color;
+    &-img {
+        height: 75%;
+        width: 75%;
+    }
+    &-h1 {
+        color: $secondary-color;
+        font-family: "Helvetica LT Std";
+        font-size: 575%;
+        font-weight: lighter;
+        font-style: normal;
+    }
+}
