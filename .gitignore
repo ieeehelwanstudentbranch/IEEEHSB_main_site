@@ -1,2 +1,5 @@
 src/sass/base/main.css
 src/sass/base/main.css.map
+src/about.html
+src/index.html
+src/sass/pages/_about-page.scss
