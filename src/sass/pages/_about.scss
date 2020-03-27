@@ -15,7 +15,7 @@ nav ul a:hover{padding:4px;
     &-map {
         background: $secondary-color;
         color: $primary-color;
-        font-size: 175%;
+        font-size: 1.5rem;
         text-align: center;
         font-family: "Helvetica LT Std Light";
         padding-top: 5%;
@@ -30,7 +30,7 @@ nav ul a:hover{padding:4px;
     font-family: "Futura Std Light";
     &-p{
         color: $secondary-color;
-        font-size: 175%;
+        font-size: 1.5rem;
         text-align: justify;
         margin: 8%;
         padding: 5%;
@@ -43,7 +43,7 @@ nav ul a:hover{padding:4px;
     &-p {
         text-align: justify;
         color: $primary-color;
-        font-size: 175%;
+        font-size: 1.7rem;
         margin: 5%;
     }
     &-img {
@@ -58,7 +58,7 @@ nav ul a:hover{padding:4px;
     &-p {
         text-align: justify;
         color: $secondary-color;
-        font-size: 175%;
+        font-size: 1.7rem;
         margin: 5%;
         padding-bottom: 5%;;
     }
@@ -73,7 +73,7 @@ nav ul a:hover{padding:4px;
     &-h1 {
         color: $primary-color;
         font-family: "Helvetica LT Std";
-        font-size: 600%;
+        font-size: 6rem;
         font-weight: lighter;
         font-style: normal;
     }
@@ -85,12 +85,12 @@ nav ul a:hover{padding:4px;
     &-role {
         font-family: "Futura Std";
         color: #01528F;
-        font-size: 250%;
+        font-size: 2.5rem;
     }
     &-name {
         font-family: "Futura Std";
         color: #231F20;
-        font-size: 200%;
+        font-size: 2rem;
     }
 }
 
@@ -104,7 +104,7 @@ nav ul a:hover{padding:4px;
     &-h1 {
         color: $secondary-color;
         font-family: "Helvetica LT Std";
-        font-size: 575%;
+        font-size: 5.8rem;
         font-weight: lighter;
         font-style: normal;
     }

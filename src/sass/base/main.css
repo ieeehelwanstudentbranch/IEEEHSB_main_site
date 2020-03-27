@@ -14,7 +14,7 @@ nav ul a:hover {
 .about-map {
   background: #FFFFFF;
   color: #016699;
-  font-size: 175%;
+  font-size: 1.5rem;
   text-align: center;
   font-family: "Helvetica LT Std Light";
   padding-top: 5%;
@@ -29,7 +29,7 @@ nav ul a:hover {
 
 .mission-p {
   color: #FFFFFF;
-  font-size: 175%;
+  font-size: 1.5rem;
   text-align: justify;
   margin: 8%;
   padding: 5%;
@@ -44,7 +44,7 @@ nav ul a:hover {
 .region-p {
   text-align: justify;
   color: #016699;
-  font-size: 175%;
+  font-size: 1.7rem;
   margin: 5%;
 }
 
@@ -61,7 +61,7 @@ nav ul a:hover {
 .ieee-hsb-p {
   text-align: justify;
   color: #FFFFFF;
-  font-size: 175%;
+  font-size: 1.7rem;
   margin: 5%;
   padding-bottom: 5%;
 }
@@ -78,7 +78,7 @@ nav ul a:hover {
 .officers-h1 {
   color: #016699;
   font-family: "Helvetica LT Std";
-  font-size: 600%;
+  font-size: 6rem;
   font-weight: lighter;
   font-style: normal;
 }
@@ -92,13 +92,13 @@ nav ul a:hover {
 .officers-role {
   font-family: "Futura Std";
   color: #01528F;
-  font-size: 250%;
+  font-size: 2.5rem;
 }
 
 .officers-name {
   font-family: "Futura Std";
   color: #231F20;
-  font-size: 200%;
+  font-size: 2rem;
 }
 
 .highboard {
@@ -114,7 +114,7 @@ nav ul a:hover {
 .highboard-h1 {
   color: #FFFFFF;
   font-family: "Helvetica LT Std";
-  font-size: 575%;
+  font-size: 5.8rem;
   font-weight: lighter;
   font-style: normal;
 }
