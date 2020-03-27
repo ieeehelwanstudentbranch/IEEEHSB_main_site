@@ -19,8 +19,10 @@ nav ul a:hover{padding:4px;
         text-align: center;
         font-family: "Helvetica LT Std Light";
         padding-top: 5%;
-        border: 0%;
-        margin: 0%;
+    }
+    &-map-img {
+        height: 100%;
+        width: 90%;
     }
 
 }
