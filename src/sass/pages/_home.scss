@@ -1,0 +1,210 @@
+nav {
+  background-color: $primary-color;
+
+  li {
+    &:hover {
+      padding: 1px;
+      background: $third-color;
+
+    }
+  }
+}
+
+.carousel-inner {
+  img {
+    height: 500px;
+  }
+}
+
+.col-sm-6 {
+  text-align: center;
+  background-color: $primary-color;
+  color: $seconndary-color;
+}
+
+
+.upcoming-events {
+  padding-bottom: 0.5rem;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    color: $primary-color;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  img {
+    width: 90px;
+    height: 90%;
+
+    &:hover {
+      transform: scale(1.7);
+      background: rgb(209, 206, 206);
+
+    }
+  }
+}
+
+.modifier {
+  background-color: $primary-color;
+  padding-bottom: 4rem;
+
+
+  p {
+    color: $seconndary-color;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem
+  }
+}
+
+.articles {
+  background-color: $primary-color;
+  padding-top: 1.74rem;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+  }
+
+  img {
+    padding-top: 2.75rem;
+    padding-bottom: 3.75rem;
+    width: 9rem;
+    height: 16rem;
+
+    &:hover {
+      background-color: $third-color;
+      padding: 3px;
+
+      transform: scale(1);
+    }
+  }
+}
+
+.big_body {
+  height: 637.793px;
+  width: 100%;
+
+  /* big_parent1 is season '19 page*/
+  /* big_parent2 is message page*/
+
+  .big_parent1 .parent1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    width: 100%;
+
+    .div1 {
+      font-weight: bold;
+      text-align: center;
+
+      color: $primary-color;
+
+    }
+
+    .div2 .video {
+      margin: 0% 25%;
+      border: 8px solid $primary-color;
+      width: 50%;
+      border-width: 5px;
+    }
+  }
+
+  .big_parent2 {
+    background-color: $primary-color;
+
+    .body1 .parent {
+      background-color: $primary-color;
+      width: 100%;
+      text-align: center;
+
+
+      h4 {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+
+      }
+
+      .img_div {
+        text-align: center;
+        background-color: white;
+        border-radius: 50%;
+        width: 150px;
+        height: 100px;
+        margin: auto;
+      }
+
+      p {
+        padding-top: 0.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: center;
+        color: white;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.sponsers {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    color: $primary-color;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  img {
+    width: 60%;
+    height: 40%;
+  }
+}
+
+.footer {
+  position: fixed;
+  height: 55px;
+
+  bottom: 0px;
+
+  color: #fff;
+
+  padding-top: 20px;
+
+  width: 100%;
+
+  background: #00003E;
+
+  background: -webkit-linear-gradient(to right, #31BDE6, #00003E);
+
+  background: linear-gradient(to right, #31BDE6, #00003E);
+
+  text-align: center;
+
+}
+
+@media only screen and (min-width: 160px) and (max-width: 900px) {
+  .big_body .big_body {
+    padding: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+
+    .big_parent1 .parent .div1 {
+      font-size: unset;
+      display: contents;
+      font-weight: 400;
+    }
+
+
+  }
+}
