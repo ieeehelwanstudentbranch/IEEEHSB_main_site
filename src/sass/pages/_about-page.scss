@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=poppins:400,500,700');
 $primary-color: #016699;
 $secondary-color: #FFFFFF;
-$font-myriad: "Myriad Pro", Myriad;
+$font-myriad: "Myriad Pro",
+Myriad;
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-nav ul a:hover{padding:4px;
+}
+
+nav ul a:hover {
+    padding: 4px;
     background-color: #929292;
 }
 
@@ -20,6 +24,7 @@ nav ul a:hover{padding:4px;
         font-family: "Helvetica LT Std Light";
         padding-top: 5%;
     }
+
     &-map-img {
         height: 100%;
         width: 90%;
@@ -30,7 +35,8 @@ nav ul a:hover{padding:4px;
 .mission {
     background: $primary-color;
     font-family: "Futura Std Light";
-    &-p{
+
+    &-p {
         color: $secondary-color;
         font-size: 1.5rem;
         text-align: justify;
@@ -38,16 +44,19 @@ nav ul a:hover{padding:4px;
         padding: 5%;
     }
 }
+
 .region {
     text-align: center;
     font-family: "Futura Std Light";
     background: $secondary-color;
+
     &-p {
         text-align: justify;
         color: $primary-color;
         font-size: 1.7rem;
         margin: 5%;
     }
+
     &-img {
         width: 60%;
     }
@@ -57,13 +66,16 @@ nav ul a:hover{padding:4px;
     text-align: center;
     font-family: "Futura Std Light";
     background: $primary-color;
+
     &-p {
         text-align: justify;
         color: $secondary-color;
         font-size: 1.7rem;
         margin: 5%;
-        padding-bottom: 5%;;
+        padding-bottom: 5%;
+        ;
     }
+
     &-img {
         width: 75%;
     }
@@ -72,6 +84,7 @@ nav ul a:hover{padding:4px;
 .officers {
     text-align: center;
     background: $secondary-color;
+
     &-h1 {
         color: $primary-color;
         font-family: "Helvetica LT Std";
@@ -79,16 +92,19 @@ nav ul a:hover{padding:4px;
         font-weight: lighter;
         font-style: normal;
     }
+
     &-img {
         border-radius: 50%;
         height: 70%;
         width: 60%;
     }
+
     &-role {
         font-family: "Futura Std";
         color: #01528F;
         font-size: 2.5rem;
     }
+
     &-name {
         font-family: "Futura Std";
         color: #231F20;
@@ -99,10 +115,12 @@ nav ul a:hover{padding:4px;
 .highboard {
     text-align: center;
     background-color: $primary-color;
+
     &-img {
         height: 75%;
         width: 75%;
     }
+
     &-h1 {
         color: $secondary-color;
         font-family: "Helvetica LT Std";
