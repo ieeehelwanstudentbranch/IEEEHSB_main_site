@@ -18,61 +18,61 @@
 
 <body>
 
-  <!--NAVBAR-->
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="./index.html"><img src="/src/images/logos/ieee-hsb-white-crop.png" style="width:130px;" /></a>
 
-
-  <nav class="navbar navbar-expand-md  navbar-dark fixed-top">
-
-    <a href="https://ieeehsb.org"><img src="/src/images/logos/ieee-hsb-white-crop.png" style="width:130px;" /></a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    </div>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
 
-      <ul class="nav navbar-nav navbar-right ">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html">About</a>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">about</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Events</a>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">events</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Chapters & Affinity group</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            chapters & Affinity group
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">chapters</a>
+            <a class="dropdown-item" href="#">WIE Affinity Group</a>
+          </div>
         </li>
-        <li class="nav-item active">
+
+        <li class="nav-item">
           <a class="nav-link" href="#">Eye-EEE Magazine</a>
         </li>
-        <li class="nav-item active">
+
+        <li class="nav-item">
           <a class="nav-link" href="#">Membership</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Sign in</a>
-        </li>
+
       </ul>
-      <div class="input-group col-md-4">
-        <input class="form-control py-2" placeholder="search..">
-        <span class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">
-            <i class="fa fa-search"></i>
-          </button>
-        </span>
-      </div>
 
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
-    </div>
-
   </nav>
+  <!-- end navbar -->
+
+
   <!--IMAGE SLIDER-->
-
-
-                           <!--         edit all imgs       -->
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators data-wrap=" true">
@@ -82,7 +82,7 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">  
+      <div class="carousel-item active">
         <img class="d-block w-100" src="/src/images/4.png" alt="First slide">
       </div>
       <div class="carousel-item ">
@@ -126,7 +126,7 @@
   </div>
 
 
-                             <!--UpcomingEvents-->
+  <!--UpcomingEvents-->
 
   <div class="upcoming-events">
     <div class="container mt-3">
@@ -137,8 +137,10 @@
 
         <a href="" class="p-2 ax"><img src="/src/images/ax1.png" style="  background-color: chocolate; " /></a>
 
-        <a href="" class="p-2 tex"><img src="/src/images/TEX-01.png" style=" background-color:hsl(157, 59%, 24%);  "></a>
-        <a href="" class="p-2 wie"><img src="/src/images/WIE LOGO transparent 2.png" style=" background-color:#2e061e ;  " /></a>
+        <a href="" class="p-2 tex"><img src="/src/images/TEX-01.png"
+            style=" background-color:hsl(157, 59%, 24%);  "></a>
+        <a href="" class="p-2 wie"><img src="/src/images/WIE LOGO transparent 2.png"
+            style=" background-color:#2e061e ;  " /></a>
 
       </div>
     </div>
@@ -146,7 +148,7 @@
 
 
 
-                            <!--paragraph-->
+  <!--paragraph-->
 
 
 
@@ -185,11 +187,14 @@
       <h1>Latest Articles</h1>
       <div class="d-flex justify-content-around  mb-3">
 
-        <a href=""><img src="/src/images/4.jpeg" /></a><!--edit-->
+        <a href=""><img src="/src/images/4.jpeg" /></a>
+        <!--edit-->
 
-        <a href=""><img src="/src/images/4.jpeg" /></a><!--edit-->
+        <a href=""><img src="/src/images/4.jpeg" /></a>
+        <!--edit-->
 
-        <a href=""><img src="/src/images/4.jpeg"></a> <!--edit-->
+        <a href=""><img src="/src/images/4.jpeg"></a>
+        <!--edit-->
 
       </div>
     </div>
@@ -210,7 +215,7 @@
         <div class="parent">
           <h4>Message From IEEE Helwan SB Counselor</h4>
           <h4> Dr. Omer Hanfy</h4>
-          <div class="img_div"> <img  href="#" class="img"> </div>
+          <div class="img_div"> <img href="#" class="img"> </div>
           <p class="p">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer
             adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
@@ -231,8 +236,10 @@
       </div>
       <br>
       <div class="row">
-        <a href="" class="col"><img src="/src/images/4.jpeg" /></a><!--edit-->
-        <a href="" class="col"><img src="/src/images/4.jpeg" /></a> <!--edit-->
+        <a href="" class="col"><img src="/src/images/4.jpeg" /></a>
+        <!--edit-->
+        <a href="" class="col"><img src="/src/images/4.jpeg" /></a>
+        <!--edit-->
         <a href="" class="col"><img src="/src/images/logo300.png"></a>
         <a href="" class="col"><img src="/src/images/comma.jpg"></a>
         <a href="" class="col"><img src="/src/images/3b.png"></a>
@@ -242,7 +249,8 @@
         <a href="" class="col"><img src="/src/images/FEC.png" /></a>
         <a href="" class="col"><img src="/src/images/FabriGate White.png" /></a>
         <a href="" class="col"><img src="/src/images/dell.jpeg"></a>
-        <a href="" class="col"><img src="/src/images/4.jpeg"></a> <!--edit-->
+        <a href="" class="col"><img src="/src/images/4.jpeg"></a>
+        <!--edit-->
       </div>
     </div>
   </div>

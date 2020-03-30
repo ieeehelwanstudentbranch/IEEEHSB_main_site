@@ -1,0 +1,38 @@
+nav {
+    background-color: $primary-color;
+
+    ul {
+
+        li {
+            a {
+                color: $white;
+            }
+
+            &:hover {
+                padding: 1px;
+                background: $primary-color-dark;
+
+                a {
+                    color: $white;
+                }
+            }
+
+            .dropdown-menu {
+                background-color: $primary-color;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    form {
+        button {
+            color: $white;
+            background-color: $primary-color;
+            border-color: $white;
+        }
+    }
+
+}
